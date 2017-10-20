@@ -1,7 +1,52 @@
-/* Map SVG */
+/* 1. CSS RESET */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    line-height: 1em;
+}
+
+/* 2. GENERAL STYLING */
+
+body {
+    width: 100%;
+    font-family: futura-pt, Futura, sans-serif;
+    font-weight: 500;
+    margin: auto;
+    color: #000000;
+}
+
+
+/* 2.1 TYPOGRAPHY */
+.key-location-text {
+    font-family: futura-pt, Futura, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    fill: #FFF;
+}
+
+/* 3. NAV */
+
+
+/* 4. MAP */
+.map-container {
+    height: 100vh;
+    width: 100%;
+    background-color: #6ad4eb;        
+}
+
+.map-svg {
+    height: 100vh;
+    width: 100%;
+    background-color: #6ad4eb;        
+}
 
 .trails {
     stroke: #FFF;
     opacity: 0.6;
     stroke-dasharray: 20;
 }
+
+
+/*

@@ -10,32 +10,17 @@
     <meta name="keywords" content="'Kezie Todd', kezie, portfolio, design, 'map web design', ixdbelfast, 'designs with personality'" />
     <meta name="author" content="Kezie Todd" />
     
-    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link href="style.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="map">
-        <svg viewBox="0 0 1440 1024" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background:#6AD4EB">
+    <div class="map-container">
+        <svg class="map-svg" viewBox="0 0 1440 1024" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <title>
-            map
+            Portfolio Map
           </title>
-          <defs>
-            <path id="path-1" d="M36.03 62.647V.35H.377v62.297h35.65z"/>
-            <path id="path-3" d="M0 71h373.643V.402H0z"/>
-
-            <path id="path-5" d="M405 714h120v120H405z"/>
-            <path id="path-6" d="M235 597h120v120H235z"/>
-            <path id="path-7" d="M175 389h120v120H175z"/>
-            <path id="path-8" d="M373 225h120v120H373z"/>
-            <path id="path-9" d="M592 60h120v120H592z"/>
-            <path id="path-10" d="M688 212h120v120H688z"/>
-            <path id="path-11" d="M963 267h120v120H963z"/>
-            <path id="path-12" d="M882 85h120v120H882z"/>
-            <path id="path-13" d="M1228 300h120v120h-120z"/>
-            <path id="path-14" d="M1054 565h120v120h-120z"/>
-            <path id="path-15" d="M822 802h120v120H822z"/>
-          </defs>
-          <g id="Page-1" fill="none" fill-rule="evenodd">
+          <defs/>
+          <g fill="none" fill-rule="evenodd">
 
             <g id="map">
 
@@ -64,10 +49,10 @@
               </g>
 
 
-            <!-- Section Icons -->
+            <!-- Key Location Icons -->
               <g id="ship">
                 <path fill="#FFF" d="M200 847l22.224 28h75.14L318 847z"/>
-                <g id="Group-8" fill="#FFF">
+                <g fill="#FFF">
                   <path d="M260.457 858.105h3.3V789h-3.3z"/>
                   <path d="M279.438 840.006h-34.75S239 836.656 239 816.97c0-19.683 5.687-23.034 5.687-23.034h34.75c-1.482 2.682-5.686 11.004-5.686 23.035 0 3.327.323 13.333 5.688 23.036" />
                   <path d="M224.078 855.07h3.3V809h-3.3z"/>
@@ -126,27 +111,28 @@
 
                 <path id="x" fill="#6AD4EB" d="M749.358 637L719.5 666.858 689.642 637 669 657.642l29.858 29.858L669 717.358 689.642 738l29.858-29.857L749.358 738 770 717.358 740.143 687.5 770 657.642z"/>
 
-              <!--Section Headings -->
-
-              <text id="Blog" font-family="Futura-Bold, Futura" font-size="30" font-weight="bold" fill="#FFF">
-                <tspan x="1145" y="926">Blog</tspan>
-              </text>
-              <text id="Work" font-family="Futura-Bold, Futura" font-size="30" font-weight="bold" fill="#FFF">
-                <tspan x="1136" y="269">Work</tspan>
-              </text>
-              <text id="About" font-family="Futura-Bold, Futura" font-size="30" font-weight="bold" fill="#FFF">
-                <tspan x="213" y="926">About</tspan>
-              </text>
-              <text id="CV" font-family="Futura-Bold, Futura" font-size="30" font-weight="bold" fill="#FFF">
-                <tspan x="239" y="269">CV</tspan>
-              </text>
-              <text id="Talk-to-Me" font-family="Futura-Bold, Futura" font-size="30" font-weight="bold" fill="#FFF">
-                <tspan x="637" y="775">Talk to Me</tspan>
-              </text>
+              <!--Key Location Headings -->
+              <g class="key-location-text" text-anchor="middle">
+                <text>
+                  <tspan x="1145" y="926">Blog</tspan>
+                </text>
+                <text>
+                  <tspan x="1136" y="269">Work</tspan>
+                </text>
+                <text>
+                  <tspan x="213" y="926">About</tspan>
+                </text>
+                <text>
+                  <tspan x="239" y="269">CV</tspan>
+                </text>
+                <text>
+                  <tspan x="637" y="775">Talk to Me</tspan>
+                </text>
+              </g>
 
 
               <!-- Words -->
-              <path id="Rectangle-10" fill="#000" d="M431 414h579v196H431z"/>
+              <path fill="#000" d="M431 414h579v196H431z"/>
                     <g id="wordmark" fill="#6AD4EB" transform="translate(533.000000, 430.000000)">
                         <polygon points="51.1,70.1 51.1,58.3 27.9,35.1 51.1,11.8 51.1,0 16,35.1 	"/>
                         <path d="M111.3,62.7h20.9v7.7h-37L118,42.7h-18v-7.6h34L111.3,62.7z"/>
