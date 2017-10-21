@@ -72,6 +72,31 @@ h3 {
 }
 
 
+/* 5 FOOTER */
+.social {
+    display: inline;
+    text-align: center;
+    list-style: none;
+}
+
+.social ul li {
+    display: inline;
+}
+
+.social a img {
+    -webkit-transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in;
+}
+
+.social a:hover img {
+   -webkit-transform: scale(1.05) rotate(360deg);
+    transform: scale(1.05) rotate(360deg);
+}
+
+.social img {
+    width: 3em;
+    margin: auto 0.5em auto 0.5em;
+}
 
 
 
@@ -85,7 +110,8 @@ h3 {
 .border-bottom {
     width: 100%;
     height: auto;
-    transform: rotate(180deg)
+    margin-top: -0.1em;
+    transform: rotate(180deg);
 }
 
 .island-background {
@@ -139,4 +165,9 @@ h3 {
     margin: auto;
     padding: 1em;
     display: inline;    
+}
+
+.flex-item a {
+    width: 100%;
+    height: 100%;
 }
