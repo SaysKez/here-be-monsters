@@ -26,6 +26,13 @@ body {
     fill: #FFF;
 }
 
+.description-text {
+    font-family: futura-pt, Futura, sans-serif;
+    font-size: 1.15em;
+    font-weight: 400;
+    fill: #FFF;    
+}
+
 /* 3. NAV */
 
 
