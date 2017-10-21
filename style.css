@@ -15,6 +15,7 @@ body {
     font-weight: 500;
     margin: auto;
     color: #000000;
+    background-color: #6ad4eb;        
 }
 
 
@@ -53,6 +54,5 @@ body {
     opacity: 0.6;
     stroke-dasharray: 20;
 }
-
 
 /*
