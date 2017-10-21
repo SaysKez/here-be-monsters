@@ -18,8 +18,20 @@ body {
     background-color: #6ad4eb;        
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /* 2.1 TYPOGRAPHY */
+h2 {
+    font-size: 4.236em;
+}
+
+h3 {
+    font-size: 2.618em;
+}
+
 .key-location-text {
     font-family: futura-pt, Futura, sans-serif;
     font-size: 1.5em;
@@ -59,4 +71,72 @@ body {
     opacity: 0.7;
 }
 
-/*
+
+
+
+
+/* GENERAL SECTION STYLING */
+.border-top {
+    width: 100%;
+    height: auto;
+    margin-bottom: -0.2em;
+}
+
+.border-bottom {
+    width: 100%;
+    height: auto;
+    transform: rotate(180deg)
+}
+
+.island-background {
+    background-color: #000;
+}
+
+.header-icon {
+    width: 30%;
+    height: auto;
+    margin-bottom: -6em;
+}
+
+
+/* PORTFOLIO */
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;    
+    margin: auto;
+    width: 100%;
+}
+
+.flex-item {
+    width:25%;
+    margin: auto;
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5em 1em;
+
+    border: 0.25em solid #6ad4eb;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+.flex-item h3 {
+    color: #FFF;
+    margin: 0.25em auto;
+}
+
+.flex-item p {
+    color: #FFF;    
+}
+
+.center {
+    justify-self: center;
+}
+
+.flex-item svg {
+    margin: auto;
+    padding: 1em;
+    display: inline;    
+}
