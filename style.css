@@ -55,4 +55,8 @@ body {
     stroke-dasharray: 20;
 }
 
+.minor-location {
+    opacity: 0.7;
+}
+
 /*
