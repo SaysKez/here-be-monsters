@@ -270,3 +270,9 @@ h4 {
     width: 100%;
     margin: 0.5em 0em;
 }
+
+
+/* CONTACT */
+.secondary-icon {
+    transform: scale(0.4);
+}
