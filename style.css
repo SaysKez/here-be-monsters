@@ -116,6 +116,15 @@ h3 {
     z-index: -1;
 }
 
+.parallax-wrapper {
+    margin-bottom: 5em;
+}
+
+.parallax-footer {
+    height: 5em;
+    bottom: -1em;
+}
+
 .border-top {
     width: 100%;
     height: auto;
@@ -128,8 +137,7 @@ h3 {
     height: auto;
     margin-top: -0.1em;
     transform: rotate(180deg);
-    z-index: 2; 
-    margin-bottom: 20em;   
+    z-index: 2;
 }
 
 .island-background {
