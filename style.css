@@ -166,6 +166,12 @@ h4 {
     transform: scale(0.85);
 }
 
+p {
+    width: 68%;
+    line-height: 1.5em;
+    margin: 1.5em auto;
+}
+
 
 /* PORTFOLIO */
 .flex-container {
@@ -196,7 +202,9 @@ h4 {
 }
 
 .flex-item p {
-    color: #FFF;    
+    color: #FFF;  
+    width: 100%;  
+    margin: auto;
 }
 
 .center {
@@ -227,12 +235,6 @@ h4 {
 
 .island-background p {
     color: #FFF;
-}
-
-.casestudy p {
-    width: 68%;
-    line-height: 1.5em;
-    margin: 1.5em auto;
 }
 
 .casestudy h3 {
@@ -284,4 +286,10 @@ h4 {
     display: block;
     margin: auto;
     width: 20%;
+}
+
+
+/* ABOUT */
+.tilt {
+    transform: rotate(10deg) scale(0.7);
 }
