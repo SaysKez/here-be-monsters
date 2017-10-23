@@ -299,3 +299,47 @@ p.project-type {
 .tilt {
     transform: rotate(10deg) scale(0.7);
 }
+
+
+
+/* PORTFOLIO ver2 */
+.flex-test-wrapper {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin: 1em auto;
+    padding: 3em;
+    border: 0.25em solid #6ad4eb;
+    border-radius: 2em;
+    width: 68%;
+}
+
+.flex-test {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: auto 2em;
+    padding: 0.5em 0em;
+    width: 50%;
+}
+
+.flex-test h3 {
+    text-align: left;    
+}
+
+.flex-test p {
+    width: 100%;
+    margin: 0.5em auto;
+}
+
+.flex-test svg {
+        margin: auto;
+        padding: 1em;
+        display: inline;    
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-direction: column;
+}
