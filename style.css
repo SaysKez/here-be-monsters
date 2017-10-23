@@ -222,7 +222,7 @@ h4 {
     width: 60%;
     height: auto;
     display: block;
-    border: 1em solid #FFF;
+    /* border: 1em solid #FFF; */
 }
 
 .island-background p {
@@ -246,8 +246,9 @@ h4 {
     flex-direction: row;
     text-align: center;
     align-items: center;
+    justify-content: center;
+    margin: 2em auto;
 }
-
 
 .flex-project-item {
     display: flex;
@@ -268,14 +269,4 @@ h4 {
 .flex-project-item p {
     width: 100%;
     margin: 0.5em 0em;
-}
-
-img {
-    width: 49%;
-    height: auto;
-    display: inline-block;
-}
-
-.image-block {
-    text-align: center;
 }
