@@ -22,7 +22,6 @@ a {
     text-decoration: none;
 }
 
-
 /* 2.1 TYPOGRAPHY */
 
 p {
@@ -55,14 +54,14 @@ h4 {
 
 .key-location-text {
     font-family: futura-pt, Futura, sans-serif;
-    font-size: 1.5em;
+    font-size: 1.618em;
     font-weight: bold;
     fill: #FFF;
 }
 
 .description-text {
     font-family: futura-pt, Futura, sans-serif;
-    font-size: 1.15em;
+    font-size: 1.3em;
     font-weight: 400;
     fill: #FFF;    
 }
@@ -115,7 +114,7 @@ h4 {
 }
 
 .social img {
-    width: 3em;
+    width: 3.25em;
     margin: auto 0.5em auto 0.5em;
 }
 
@@ -172,8 +171,9 @@ h4 {
 .flex-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;    
+    justify-content: center; 
     width: 100%;
+    margin: auto;
 }
 
 .flex-item {
@@ -219,7 +219,7 @@ h4 {
 /* CASE STUDY */
 
 .project-header {
-    width: 60%;
+    width: 50%;
     height: auto;
     display: block;
     /* border: 1em solid #FFF; */
@@ -257,7 +257,9 @@ h4 {
     margin: auto 2em;
     border-top: 0.25em solid #6ad4eb;
     border-bottom: 0.25em solid #6ad4eb;
-    padding: 1em 0em 1em 0em;
+    padding: 0.5em 0em;
+    width: 20%;
+    
 }
 
 .flex-project-item span {
@@ -267,6 +269,19 @@ h4 {
 }
 
 .flex-project-item p {
-    width: 100%;
     margin: 0.5em 0em;
+    width: 100%;
+    /* font-style: italic; */
+}
+
+
+/* CONTACT */
+.secondary-icon {
+    transform: scale(0.4);
+}
+
+#x-icon {
+    display: block;
+    margin: auto;
+    width: 20%;
 }
