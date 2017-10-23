@@ -24,6 +24,11 @@ a {
 
 
 /* 2.1 TYPOGRAPHY */
+
+p {
+    font-size: 1.1em;
+}
+
 h1 {
     font-size: 6.854em; 
     font-family: Futura, sans-serif;
@@ -39,6 +44,13 @@ h2 {
 
 h3 {
     font-size: 2.618em;
+    text-align: center;
+    color: #FFF;
+}
+
+h4 {
+    font-size: 1.618em;
+    text-align: center;
 }
 
 .key-location-text {
@@ -141,6 +153,7 @@ h3 {
 }
 
 .island-background {
+    padding: 2.5em 0em;
     background-color: #000;
     z-index: 2;    
 }
@@ -160,7 +173,6 @@ h3 {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;    
-    margin: auto;
     width: 100%;
 }
 
@@ -200,4 +212,61 @@ h3 {
 .flex-item a {
     width: 100%;
     height: 100%;
+}
+
+
+
+/* CASE STUDY */
+
+.project-header {
+    width: 60%;
+    height: auto;
+    display: block;
+    /* border: 1em solid #FFF; */
+}
+
+.island-background p {
+    color: #FFF;
+}
+
+.casestudy p {
+    width: 68%;
+    line-height: 1.5em;
+    margin: 1.5em auto;
+}
+
+.casestudy h3 {
+    margin: 2em auto 0.5em auto;
+    width: 25%;
+    border-bottom: 0.1em solid #6ad4eb;
+}
+
+.flex-project-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 2em auto;
+}
+
+.flex-project-item {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: auto 2em;
+    border-top: 0.25em solid #6ad4eb;
+    border-bottom: 0.25em solid #6ad4eb;
+    padding: 1em 0em 1em 0em;
+}
+
+.flex-project-item span {
+    font-size: 1.618em;
+    color: #6ad4eb;
+    line-height: 1.5em;
+}
+
+.flex-project-item p {
+    width: 100%;
+    margin: 0.5em 0em;
 }
