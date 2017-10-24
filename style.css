@@ -178,38 +178,6 @@ p {
 
 
 /* PORTFOLIO */
-.flex-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center; 
-    width: 100%;
-    margin: auto;
-}
-
-.flex-item {
-    width:25%;
-    margin: auto;
-    display: flex;
-    flex-direction: row wrap;
-    justify-content: center;
-    text-align: center;
-    padding: 1.5em 1em;
-
-    border: 0.25em solid #6ad4eb;
-    border-radius: 1em;
-    margin: 1em;
-}
-
-.flex-item h3 {
-    color: #6ad4eb;
-    margin: 0.25em auto;
-}
-
-.flex-item p {
-    color: #FFF;  
-    width: 100%;  
-    margin: auto;
-}
 
 p.project-type {
     font-size: 1em;
@@ -303,19 +271,19 @@ p.project-type {
 
 
 /* PORTFOLIO ver2 */
-.flex-test-wrapper {
+.flex-container {
     display: flex;
     flex-direction: row;
     text-align: center;
     justify-content: center;
     margin: 1em auto;
-    padding: 3em;
+    padding: 2em;
     border: 0.25em solid #6ad4eb;
     border-radius: 2em;
     width: 68%;
 }
 
-.flex-test {
+.flex-item {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -324,16 +292,16 @@ p.project-type {
     width: 50%;
 }
 
-.flex-test h3 {
+.flex-item h3 {
     text-align: left;    
 }
 
-.flex-test p {
+.flex-item p {
     width: 100%;
     margin: 0.5em auto;
 }
 
-.flex-test svg {
+.flex-item svg {
         margin: auto;
         padding: 1em;
         display: inline;    
