@@ -17,7 +17,7 @@ green.onmouseleave = function(){
 
 
 $("#swamp-icon").hover(function(){
-    tl.reverse();
-  },function(){
     tl.play();
+  },function(){
+    tl.reverse();
   })
