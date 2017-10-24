@@ -233,15 +233,39 @@ p.project-type {
 }
 
 /* PORTFOLIO ICON SVGs */
+.body-element {
+    fill:none;
+    stroke-width: 6px;    
+    stroke: #FFF;
+}
 
+.highlight-element {
+    fill:none;
+    stroke-width: 6px;    
+    stroke: #6ad4eb;
+}
 
 /* PORTFOLIO HOVER */
 .flex-container:hover {
     background-color: #6ad4eb;
 }
 
-.flex-container:hover p, .flex-container:hover h3 {
+.flex-container:hover p {
    color: #000;
+}
+
+.flex-container:hover h3 {
+    color: #FFF;
+}
+
+.flex-container:hover .body-element {
+    fill: #000;
+    stroke: #000;    
+}
+
+.flex-container:hover .highlight-element {
+    fill: #FFF;
+    stroke: #FFF;    
 }
 
 
