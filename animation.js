@@ -1,2 +1,2 @@
 var tl = new TimelineMax();
-tl.from('#croc', 1, {scaleY:0, transformOrigin: "50% 100%"});
+tl.from('#croc', 1, {y:40, opacity: 0.5});
