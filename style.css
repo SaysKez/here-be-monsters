@@ -200,6 +200,8 @@ p.project-type {
     border: 0.25em solid #6ad4eb;
     border-radius: 2em;
     width: 68%;
+    transition: all 0.15s;
+    transition-timing-function: cubic-bezier(0.94, 0.4, 0.88, 0.68);
 }
 
 .flex-item {
@@ -254,7 +256,7 @@ p.project-type {
    color: #000;
 }
 
-.flex-container:hover h3 {
+.flex-container:hover h3, .flex-container:hover .project-type {
     color: #FFF;
 }
 
