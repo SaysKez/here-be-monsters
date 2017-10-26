@@ -189,6 +189,28 @@ p.project-type {
     justify-self: center;
 }
 
+.button {
+    text-align: center;
+}
+
+.button a {
+    color: #000;
+    font-weight: 700;
+    font-size: 1.5em;
+    margin: 0.5em auto 0.5em auto;
+    background-color: #6AD4EB;
+    border: none;
+    padding: 0.5em 1em;
+    display: inline-block;
+    border-radius: 0.2em;
+     -webkit-transition: all 0.15s ease-in;
+    transition: all 0.15s ease-in;
+}
+
+.button a:hover {
+    transform: scale(1.05);
+}
+
 /* PORTFOLIO FLEX */
 .flex-container {
     display: flex;
