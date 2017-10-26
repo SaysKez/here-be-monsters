@@ -319,7 +319,7 @@ p.project-type {
     width: 50%;
     height: auto;
     display: block;
-    /* border: 1em solid #FFF; */
+    border: 0.5em solid #FFF;
 }
 
 .casestudy h3 {
