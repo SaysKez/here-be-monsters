@@ -25,7 +25,9 @@ $("#swamp-icon").hover(function(){
 
 
   var krakenhover = new TimelineMax({paused: true});
-  krakenhover.fromTo('#blog-circle', 0.75, {opacity: 0, scale: 2, transformOrigin: "center center"}, {ease: "Bounce.easeOut", opacity: 1, scale:1});
+  krakenhover.add('start', 0)
+  krakenhover.fromTo('#blog-circle', 0.5, {opacity: 0, scale: 1.5, transformOrigin: "center center"}, {ease: "Bounce.easeOut", opacity: 1, scale:1}, 'start')
+  .to('#blog-text', 0.5, {fill: "#ED1956"}, 'start');
 
   $("#blog-box").hover(function(){
     krakenhover.play();

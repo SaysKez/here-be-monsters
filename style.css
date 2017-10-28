@@ -22,6 +22,10 @@ a {
     text-decoration: none;
 }
 
+.responsive-map {
+    display: none;
+}
+
 /* 2.1 TYPOGRAPHY */
 
 p {
@@ -381,3 +385,48 @@ p.project-type {
 
 
 
+
+/* HOME RESPONSIVE */
+
+@media (max-width: 45em) {
+
+    /* GENERAL */
+
+    .responsive-map {
+        display: block;
+    }
+
+    .map-container {
+        display: none;               
+    }
+
+    .responsive-map p {
+        color: #FFF;
+        width: 80%;
+        text-align: center;
+    }
+
+    .responsive-map div {
+        background-color: #000;        
+    }
+
+    div.water {
+        background-color: #6ad4eb;
+    }
+
+    /* INTRO */
+
+    #wordmark {
+        display: block;
+        margin: auto;
+        width: 70%;
+    }
+
+    .key-location-icon {
+        width: 25%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+}
