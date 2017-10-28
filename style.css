@@ -73,6 +73,7 @@ h4 {
 .location-description {
     fill: #6ad4eb;
     font-style: italic;
+    opacity: 0;
 }
 
 /* 3. NAV */

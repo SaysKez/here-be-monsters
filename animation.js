@@ -15,18 +15,18 @@ green.onmouseleave = function(){
 }
 */
 
-var swamphover = new TimelineMax({paused:true});
-swamphover.to('#croc', 1, {y: 10, opacity: 0.5}, 0)
-.fromTo('.location-text', 0.2, {opacity: 0}, {opacity: 1}, 0)
+var swampHoverIn = new TimelineMax({paused:true});
+swampHoverIn.to('#croc', 1, {y: 2, opacity: 0.8}, 0)
+.to('.location-description', 0.5, {opacity: 1}, 0)
 .to('.replace-text', 1, {text:"Javascript", ease:Linear.easeNone}, "+=0.5")
 .to('.replace-text', 1, {text:"SVGs", ease:Linear.easeNone}, "+=0.5")
 .to('.replace-text', 1, {text:"ReactJS", ease:Linear.easeNone}, "+=0.5");
 
 
 $("#swamp-icon").hover(function(){
-    swamphover.play();
+    swampHoverIn.play();
   },function(){
-    swamphover.reverse();
+    swampHoverIn.reverse();
   })
 
 
