@@ -63,11 +63,16 @@ h4 {
     fill: #FFF;
 }
 
-.description-text {
+.intro-text {
     font-family: futura-pt, Futura, sans-serif;
     font-size: 1.3em;
     font-weight: 400;
     fill: #FFF;    
+}
+
+.location-description {
+    fill: #6ad4eb;
+    font-style: italic;
 }
 
 /* 3. NAV */
