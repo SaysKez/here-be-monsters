@@ -22,11 +22,14 @@ swampHoverIn.to('#croc', 1, {y: 2, opacity: 0.8}, 0)
 .to('.replace-text', 1, {text:"SVGs", ease:Linear.easeNone}, "+=0.5")
 .to('.replace-text', 1, {text:"ReactJS", ease:Linear.easeNone}, "+=0.5");
 
+var swampHoverOut = new TimelineMax({paused:true});
+swampHoverOut.to('.location-description', 0.5, {opacity: 0}, 0);
+
 
 $("#swamp-icon").hover(function(){
     swampHoverIn.play();
   },function(){
-    swampHoverIn.reverse();
+    swampHoverOut.play();
   })
 
 
