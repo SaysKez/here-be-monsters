@@ -1,5 +1,5 @@
-var tl = new TimelineMax();
-tl.from('#croc', 1, {y: 10, opacity: 0.5});
+var swamp = new TimelineMax();
+swamp.from('#croc', 1, {y: 10, opacity: 0.5});
 
 /*
 var green = document.getElementById("swamp-icon");
@@ -17,7 +17,18 @@ green.onmouseleave = function(){
 
 
 $("#swamp-icon").hover(function(){
-    tl.reverse();
+    swamp.reverse();
   },function(){
-    tl.play();
+    swamp.play();
+  })
+
+
+
+  var krakenhover = new TimelineMax({paused: true});
+  krakenhover.fromTo('#blog-circle', 0.75, {opacity: 0, scale: 2, transformOrigin: "center center"}, {ease: "Bounce.easeOut", opacity: 1, scale:1});
+
+  $("#blog-box").hover(function(){
+    krakenhover.play();
+  },function(){
+    krakenhover.reverse();
   })
