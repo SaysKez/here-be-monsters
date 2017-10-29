@@ -445,4 +445,8 @@ p.project-type {
         margin: auto;
     }
 
+    .project-icon {
+        width: 20%;
+    }
+
 }
