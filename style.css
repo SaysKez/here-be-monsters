@@ -38,7 +38,8 @@ h1 {
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 1em;
+    width: 68%;
+    margin: 1em auto 0em auto;
 }
 
 h2 {
@@ -335,6 +336,7 @@ p.project-type {
     display: block;
     border: 0.5em solid #FFF;
     transition: transform 0.3s ease-in-out;
+    background-color: #FFF;
 }
 
 .project-header:hover {
