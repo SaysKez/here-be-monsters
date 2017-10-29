@@ -1,5 +1,5 @@
-var tl = new TimelineMax();
-tl.from('#croc', 1, {y: 10, opacity: 0.5});
+var swamp = new TimelineMax();
+swamp.from('#croc', 1, {y: 10, opacity: 0.5});
 
 /*
 var green = document.getElementById("swamp-icon");
@@ -15,9 +15,32 @@ green.onmouseleave = function(){
 }
 */
 
+var swampHoverIn = new TimelineMax({paused:true});
+swampHoverIn.to('#croc', 1, {y: 2, opacity: 0.8}, 0)
+.to('.location-description', 0.5, {opacity: 1}, 0)
+.to('.replace-text', 1, {text:"Javascript", ease:Linear.easeNone}, "+=0.5")
+.to('.replace-text', 1, {text:"SVGs", ease:Linear.easeNone}, "+=0.5")
+.to('.replace-text', 1, {text:"ReactJS", ease:Linear.easeNone}, "+=0.5");
+
+var swampHoverOut = new TimelineMax({paused:true});
+swampHoverOut.to('.location-description', 0.5, {opacity: 0}, 0);
+
 
 $("#swamp-icon").hover(function(){
-    tl.reverse();
+    swampHoverIn.play();
   },function(){
-    tl.play();
+    swampHoverOut.play();
+  })
+
+
+
+  var krakenhover = new TimelineMax({paused: true});
+  krakenhover.add('start', 0)
+  krakenhover.fromTo('#blog-circle', 0.5, {opacity: 0, scale: 1.5, transformOrigin: "center center"}, {ease: "Bounce.easeOut", opacity: 1, scale:1}, 'start')
+  .to('#blog-text', 0.5, {fill: "#ED1956"}, 'start');
+
+  $("#blog-box").hover(function(){
+    krakenhover.play();
+  },function(){
+    krakenhover.reverse();
   })
