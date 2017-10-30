@@ -34,13 +34,33 @@ $("#swamp-icon").hover(function(){
 
 
 
+
+//KEY LOCATION HOVERS
+
   var krakenhover = new TimelineMax({paused: true});
   krakenhover.add('start', 0)
-  krakenhover.fromTo('#blog-circle', 0.5, {opacity: 0, scale: 1.5, transformOrigin: "center center"}, {ease: "Bounce.easeOut", opacity: 1, scale:1}, 'start')
-  .to('#blog-text', 0.5, {fill: "#ED1956"}, 'start');
+  krakenhover.to('.kraken-tentacles', 0.5, {fill:"#ED1956"}, 'start')
+  .to('#blog-text', 0.5, {text:"Here Be Monsters", fill: "#000"}, 'start');
 
   $("#blog-box").hover(function(){
     krakenhover.play();
   },function(){
     krakenhover.reverse();
   })
+
+
+  var shiphover = new TimelineMax({paused: true});
+  shiphover.add('start', 0)
+  shiphover.to('.ship-highlight', 0.5, {fill:"#6ad4eb", stroke:"#6ad4eb"}, 'start')
+  .to('#about-text', 0.5, {text:"Come Sailing", fill: "#6ad4eb"}, 'start');
+
+  $("#about-box").hover(function(){
+    shiphover.play();
+  },function(){
+    shiphover.reverse();
+  })
+
+
+  var keyLocations = new TimelineMax({repeat:-1, yoyo:true, repeatDelay: 0.25});
+  keyLocations.add('start', 0)
+  .fromTo('#ship', 1, {ease: "Back.easeOut", rotation:-5, transformOrigin: "center center"}, {rotation:5, transformOrigin: "center center"}, 'start', );
