@@ -36,15 +36,17 @@ $("#swamp-icon").hover(function(){
 //KET LOCATION REPEAT
 var shipRepeat = new TimelineMax({repeat:-1, yoyo:true, repeatDelay:0.05});
 shipRepeat.add('start', 0)
-.fromTo('#ship', 1, { rotation:-3, transformOrigin: "50% 50%"}, {rotation:3, transformOrigin: "50% 50%"}, 'start', );
+.fromTo('#ship', 1, { rotation:-3, transformOrigin: "50% 50%"}, {rotation:3, transformOrigin: "50% 50%"}, 'start');
 
-/*
-var flagRepeat = new TimelineMax({repeat:-1});
+
+var flagRepeat = new TimelineMax({repeat:-1, yoyo:true});
 flagRepeat.add('start', 0)
-.fromTo();
-*/
+.to('.flag-wave', 1, {scaleY:0.95, scaleX:1.05}, 'start');
+
 
 //KEY LOCATION HOVERS
+//Add fontWeight: "700i" / whatever to make new text italic
+
   var shipHover = new TimelineMax({paused: true});
   shipHover.add('start', 0)
   shipHover.to('.ship-highlight', 0.5, {fill:"#6ad4eb", stroke:"#6ad4eb"}, 'start')
