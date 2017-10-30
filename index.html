@@ -270,23 +270,33 @@
             <use class="minor-location" x="860" y="870" width="50" height="60" xlink:href="#palm-icon" />
             
 
-            <!-- Key Location Icons -->
-              <use id="ship" x="200" y="785" width="118" height="86" xlink:href="#ship-icon" />
+            <!-- Key Location Icons
+            Safari and Firefox don't like the transforms so each use wrapped in <g> for scale on hover-->
+
+              <g id="ship">
+                <use x="200" y="785" width="118" height="86" xlink:href="#ship-icon" />
+              </g>
               <a href="about.html">
                 <rect id="about-box" fill="#000" opacity="0" x="166" y="749" width="190" height="190"></rect>
               </a>
 
-              <use id="chest" x="210" y="140" width="100" height="84" xlink:href="#chest-icon" />                            
+              <g id="chest">
+                <use x="210" y="140" width="100" height="84" xlink:href="#chest-icon" />                            
+              </g>
               <a href="portfolio.html">
                   <rect id="work-box" fill="#000" opacity="0" x="166" y="85" width="190" height="190"></rect>                  
               </a>
 
-              <use id="flag" x="1100" y="100" width="118" height="129" xlink:href="#flag-icon" />              
+              <g id="flag">
+                <use x="1100" y="100" width="118" height="129" xlink:href="#flag-icon" />  
+              </g>            
               <a href="cv.html">
                   <rect id="cv-box" fill="#000" opacity="0" x="1084" y="85" width="190" height="190"></rect>                  
               </a>
 
-              <use id="kraken" x="1060" y="770" width="211" height="132" xlink:href="#kraken-icon" />                            
+              <g id="kraken">
+                <use x="1060" y="770" width="211" height="132" xlink:href="#kraken-icon" />                            
+              </g>
               <a href="">
                 <rect id="blog-box" fill="#000" opacity="0" x="1084" y="749" width="190" height="190"></rect>
               </a>
