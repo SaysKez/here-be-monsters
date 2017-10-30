@@ -56,7 +56,16 @@ flagRepeat.add('start', 0)
     shipHover.reverse();
   })
 
+  var chestHover = new TimelineMax({paused: true});
+  chestHover.add('start', 0)
+  chestHover.to('.chest-highlight', 0.5, {fill:"#6ad4eb", stroke:"#6ad4eb"}, 'start')
+  .to('#work-text', 0.5, {text:"Peek Inside", fill: "#6ad4eb"}, 'start');
 
+  $("#work-box").hover(function(){
+    chestHover.play();
+  },function(){
+    chestHover.reverse();
+  })
 
   var flagHover = new TimelineMax({paused: true});
   flagHover.add('start', 0)
@@ -69,13 +78,13 @@ flagRepeat.add('start', 0)
     flagHover.reverse();
   })
 
-  var krakenhover = new TimelineMax({paused: true});
-  krakenhover.add('start', 0)
-  krakenhover.to('.kraken-tentacles', 0.5, {fill:"#ED1956"}, 'start')
+  var krakenHover = new TimelineMax({paused: true});
+  krakenHover.add('start', 0)
+  krakenHover.to('.kraken-highlight', 0.5, {fill:"#6ad4eb"}, 'start')
   .to('#blog-text', 0.5, {text:"Here Be Monsters", fill: "#000"}, 'start');
 
   $("#blog-box").hover(function(){
-    krakenhover.play();
+    krakenHover.play();
   },function(){
-    krakenhover.reverse();
+    krakenHover.reverse();
   })
