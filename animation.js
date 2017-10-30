@@ -49,7 +49,7 @@ flagRepeat.add('start', 0)
 
   var shipHover = new TimelineMax({paused: true});
   shipHover.add('start', 0)
-  shipHover.to('#ship', 0.5, {transformOrigin: "50% 50%", ease: "Back.easeOut", scale:1.1}, 'start')
+  shipHover.to('#ship', 0.5, {transformOrigin: "50% 100%", ease: "Back.easeOut", scale:1.1}, 'start')
   .to('.ship-highlight', 0.5, {fill:"#6ad4eb", stroke:"#6ad4eb"}, 'start')
   .to('#about-text', 0.5, {text:"Come Sailing", fill: "#6ad4eb"}, 'start');
 
