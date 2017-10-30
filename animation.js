@@ -90,3 +90,14 @@ flagRepeat.add('start', 0)
   },function(){
     krakenHover.reverse();
   })
+
+  var xHover = new TimelineMax({paused: true});
+  xHover.add('start', 0)
+  xHover.to('.x', 0.5, {transformOrigin:"50% 50%", ease: "Back.easeOut", scale:1.1, fill:"#FFF"}, 'start')
+  .to('#contact-text', 0.5, {text:"X Marks the Spot", fill: "#6ad4eb"}, 'start');
+
+  $("#contact-box").hover(function(){
+    xHover.play();
+  },function(){
+    xHover.reverse();
+  })
