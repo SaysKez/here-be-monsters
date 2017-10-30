@@ -49,7 +49,8 @@ flagRepeat.add('start', 0)
 
   var shipHover = new TimelineMax({paused: true});
   shipHover.add('start', 0)
-  shipHover.to('.ship-highlight', 0.5, {fill:"#6ad4eb", stroke:"#6ad4eb"}, 'start')
+  shipHover.to('#ship', 0.5, {transformOrigin: "50% 50%", ease: "Back.easeOut", scale:1.1}, 'start')
+  .to('.ship-highlight', 0.5, {fill:"#6ad4eb", stroke:"#6ad4eb"}, 'start')
   .to('#about-text', 0.5, {text:"Come Sailing", fill: "#6ad4eb"}, 'start');
 
   $("#about-box").hover(function(){
@@ -71,7 +72,7 @@ flagRepeat.add('start', 0)
 
   var flagHover = new TimelineMax({paused: true});
   flagHover.add('start', 0)
-  flagHover.to('.flag-highlight', 0.5, {fill:"#6ad4eb", stroke:"#6ad4eb"}, 'start')
+  .to('.flag-highlight', 0.5, {fill:"#6ad4eb", stroke:"#6ad4eb"}, 'start')
   .to('#cv-text', 0.5, {text:"Pirate for Hire", fill: "#6ad4eb"}, 'start');
 
   $("#cv-box").hover(function(){
