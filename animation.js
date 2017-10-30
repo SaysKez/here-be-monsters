@@ -43,6 +43,11 @@ var flagRepeat = new TimelineMax({repeat:-1, yoyo:true});
 flagRepeat.add('start', 0)
 .to('.flag-wave', 1, {scaleY:0.95, scaleX:1.05}, 'start');
 
+var krakenRepeat = new TimelineMax();
+krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9, scaleX: 0.98, repeat:-1, yoyo:true}, 0)
+.to('#kraken-head', 3, {transformOrigin: "50% 65%", scaleY: 0.8}, 0);
+
+
 
 //KEY LOCATION HOVERS
 //Add fontWeight: "700i" / whatever to make new text italic
@@ -87,6 +92,7 @@ flagRepeat.add('start', 0)
   krakenHover.add('start', 0)
   .to('#kraken', 0.5, {transformOrigin: "50% 50%", ease: "Back.easeOut", scale:1.1}, 'start')  
   .to('.kraken-highlight', 0.5, {fill:"#6ad4eb"}, 'start')
+  .to('#kraken-head', 0.5, {transformOrigin: "50% 65%", scaleY: 1}, 0)  
   .to('#blog-text', 0.5, {text:"Here Be Monsters", fill: "#000"}, 'start');
 
   $("#blog-box").hover(function(){
