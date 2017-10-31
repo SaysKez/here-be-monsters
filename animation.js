@@ -115,10 +115,20 @@ krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9
   //MINOR LOCATION HOVERS
   var swampHoverIn = new TimelineMax({paused:true});
   swampHoverIn.to('#croc', 0.75, {ease: "Back.easeIn", y: 10, opacity: 0.8}, 0)
-  .to('.replace-text', 0.75, {text:"Swamps of Javascript"}, 0);
+  .to('#swamp-text', 0.75, {text:"Swamps of Javascript"}, 0);
   
   $("#swamp-icon").hover(function(){
       swampHoverIn.play();
     },function(){
       swampHoverIn.reverse();
-    })
+  })
+
+  var skeletonHover = new TimelineMax({paused:true});
+  skeletonHover.to('#skeleton-sword', 0.75, {transformOrigin: "50% 100%", scaleY:0.8}, 0)
+  .to('#skeleton-text', 0.75, {text:"Problem Assassin"}, 0);
+  
+  $("#stop5").hover(function(){
+    skeletonHover.play();
+    },function(){
+    skeletonHover.reverse();
+  })
