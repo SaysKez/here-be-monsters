@@ -1,29 +1,31 @@
+//OPENING ANIMATION
 var swamp = new TimelineMax();
-swamp.from('#croc', 1, {y: 10, opacity: 0.5});
+swamp.from('#croc', 1, {ease: "Back.easeOut", y: 10, opacity: 0.5});
 
-/*
-var green = document.getElementById("swamp-icon");
-var croc = document.getElementById("croc");
+var x = new TimelineMax();
+x.from('.x', 1, {transformOrigin:"50% 50%", ease:"Bounce.easeOut", scale:1.5});
 
 
-green.onmouseenter = function(){
-    TweenMax.to(croc, 1, {y:40, opacity: 0.5});
-}
+/* Testing out Jake Archibald's path drawing technique
+https://jakearchibald.com/2013/animated-line-drawing-svg/
 
-green.onmouseleave = function(){
-    TweenMax.from(croc, 1, {y:40, opacity: 0.5});
-}
+var path = document.querySelector('.trails');
+var length = path.getTotalLength();
+// Clear any previous transition
+path.style.transition = path.style.WebkitTransition =
+  'none';
+// Set up the starting positions
+path.style.strokeDasharray = length + ' ' + length;
+path.style.strokeDashoffset = length;
+// Trigger a layout so styles are calculated & the browser
+// picks up the starting position before animating
+path.getBoundingClientRect();
+// Define our transition
+path.style.transition = path.style.WebkitTransition =
+  'stroke-dashoffset 2s ease-in-out';
+// Go!
+path.style.strokeDashoffset = '0';
 */
-
-var swampHoverIn = new TimelineMax({paused:true});
-swampHoverIn.to('#croc', 0.75, {ease: "Back.easeIn", y: 10, opacity: 0.8}, 0)
-.to('.replace-text', 0.75, {text:"Swamps of Javascript", ease:Linear.easeNone}, 0);
-
-$("#swamp-icon").hover(function(){
-    swampHoverIn.play();
-  },function(){
-    swampHoverIn.reverse();
-  })
 
 
 //KET LOCATION REPEAT
@@ -107,3 +109,16 @@ krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9
   },function(){
     xHover.reverse();
   })
+
+
+
+  //MINOR LOCATION HOVERS
+  var swampHoverIn = new TimelineMax({paused:true});
+  swampHoverIn.to('#croc', 0.75, {ease: "Back.easeIn", y: 10, opacity: 0.8}, 0)
+  .to('.replace-text', 0.75, {text:"Swamps of Javascript"}, 0);
+  
+  $("#swamp-icon").hover(function(){
+      swampHoverIn.play();
+    },function(){
+      swampHoverIn.reverse();
+    })
