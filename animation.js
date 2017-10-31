@@ -70,6 +70,7 @@ krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9
   chestHover.add('start', 0)
   .to('#chest', 0.5, {transformOrigin: "50% 50%", ease: "Back.easeOut", scale:1.1}, 'start')      
   .to('.chest-highlight', 0.5, {fill:"#6ad4eb", stroke:"#6ad4eb"}, 'start')
+  .to('#chest-stoke', 0.5, {stroke: "#6ad4eb"}, 'start')
   .to('#work-text', 0.5, {text:"Peek Inside", fill: "#6ad4eb"}, 'start');
 
   $("#work-box").hover(function(){
