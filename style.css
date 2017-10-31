@@ -30,6 +30,7 @@ a {
 
 p {
     font-size: 1.1em;
+    max-width: 850px;
 }
 
 h1 {
@@ -44,6 +45,8 @@ h1 {
 
 h2 {
     font-size: 4.236em;
+    color: #FFF;
+    text-align: center;
 }
 
 h3 {
@@ -356,6 +359,7 @@ p.project-type {
     align-items: center;
     justify-content: center;
     margin: 2em auto;
+    max-width: 1200px;
 }
 
 .flex-project-item {
@@ -366,8 +370,7 @@ p.project-type {
     border-top: 0.25em solid #6ad4eb;
     border-bottom: 0.25em solid #6ad4eb;
     padding: 0.5em 0em;
-    width: 20%;
-    
+    width: 20%;   
 }
 
 .flex-project-item span {
@@ -404,6 +407,25 @@ p.project-type {
 .tilt {
     transform: rotate(10deg) scale(0.7);
 }
+
+.flex-wide {
+    width: 40%;
+    border: none;
+}
+
+.flex-wide h3 {
+    text-align: left;
+    color: #6ad4eb;
+}
+
+.icon-flex {
+    width: 25%;
+    height: auto;
+    display: block;
+    margin: 2em;
+}
+
+
 
 
 
