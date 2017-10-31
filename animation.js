@@ -3,7 +3,8 @@ var swamp = new TimelineMax();
 swamp.from('#croc', 1, {ease: "Back.easeOut", y: 10, opacity: 0.5});
 
 var x = new TimelineMax();
-x.from('.x', 1, {transformOrigin:"50% 50%", ease:"Bounce.easeOut", scale:1.5});
+x.from('.x', 1, {transformOrigin:"50% 50%", ease:"Elastic.easeOut", scale:2});
+
 
 
 /* Testing out Jake Archibald's path drawing technique
@@ -117,7 +118,7 @@ krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9
   swampHoverIn.to('#croc', 0.75, {ease: "Back.easeIn", y: 10, opacity: 0.8}, 0)
   .to('#swamp-text', 0.75, {text:"Swamps of Javascript"}, 0);
   
-  $("#swamp-icon").hover(function(){
+  $("#stop2").hover(function(){
       swampHoverIn.play();
     },function(){
       swampHoverIn.reverse();
