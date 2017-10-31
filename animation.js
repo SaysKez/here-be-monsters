@@ -125,11 +125,23 @@ krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9
   })
 
   var skeletonHover = new TimelineMax({paused:true});
-  skeletonHover.to('#skeleton-sword', 0.75, {transformOrigin: "50% 100%", scaleY:0.8}, 0)
+  skeletonHover.to('#skeleton-sword', 0.25, {transformOrigin: "50% 100%", scaleY:0.8}, 0)
   .to('#skeleton-text', 0.75, {text:"Problem Assassin"}, 0);
   
   $("#stop5").hover(function(){
     skeletonHover.play();
     },function(){
     skeletonHover.reverse();
+  })
+
+  var caveHover = new TimelineMax({paused:true});
+  //caveHover.to('#cave-eyes', 0.25, {ease:"Back.easeIn", transformOrigin: "50% 50%", scale:1.2}, 0)  
+  caveHover.to('#cave-eyes', 0.2, {ease:"Back.easeOut", transformOrigin: "50% 50%", scaleY:0, repeat:2, yoyo:true})
+  .to('#cave-eyes', 0.2, {ease:"Back.easeOut", transformOrigin: "50% 50%", scaleY:1})  
+  .to('#cave-text', 0.75, {text:"Creative Monster"}, 0);
+  
+  $("#stop6").hover(function(){
+    caveHover.play();
+    },function(){
+    caveHover.reverse();
   })
