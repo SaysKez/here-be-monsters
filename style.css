@@ -384,14 +384,19 @@ p.project-type {
 
 
 /* CONTACT */
-.secondary-icon {
-    transform: scale(0.4);
+.contact a {
+    color: #FFF;
+    border-bottom: 0.1em solid #6ad4eb;
+    transition: all 0.25s ease-in;
 }
 
-#x-icon {
-    display: block;
-    margin: auto;
-    width: 20%;
+.contact a:hover {
+    /* transform-origin: 100% 50%; */   
+    color: #6ad4eb;
+}
+
+.contact p {
+    text-align: center;
 }
 
 
