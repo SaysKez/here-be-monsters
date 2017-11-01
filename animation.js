@@ -118,7 +118,7 @@ krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9
 
   var xHover = new TimelineMax({paused: true});
   xHover.add('start', 0)
-  xHover.to('.x', 0.5, {transformOrigin:"50% 50%", ease: "Back.easeOut", scale:1.1, fill:"#FFF"}, 'start')
+  xHover.to('.x', 0.5, {transformOrigin:"50% 50%", ease: "Back.easeOut", scale:1.1}, 'start')
   .to('#contact-text', 0.5, {text:"X Marks the Spot", fill: "#6ad4eb"}, 'start');
 
   $("#contact-box").hover(function(){
@@ -170,6 +170,18 @@ krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9
       swampHoverIn.play();
     },function(){
       swampHoverIn.reverse();
+  })
+
+  var spyglassHover = new TimelineMax({paused:true});
+  spyglassHover.to('#spyglass', 0.5, {ease: "Back.easeIn", transformOrigin: "50% 50%", rotation: -220}, 0)
+  .to('#spyglass-text1', 0.75, {text:"Current project..."}, 0)
+  .to('#spyglass-text2', 0.75, {text:"Paper Heroes"}, 0.25);
+  
+  
+  $("#stop3").hover(function(){
+      spyglassHover.play();
+    },function(){
+      spyglassHover.reverse();
   })
 
   var skeletonHover = new TimelineMax({paused:true});
