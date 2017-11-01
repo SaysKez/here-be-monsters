@@ -333,6 +333,10 @@ p.project-type {
     margin-top: 4em;
 }
 
+.long-title .border-top {
+    margin-top: 10em;
+}
+
 .project-header {
     width: 50%;
     height: auto;
