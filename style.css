@@ -79,6 +79,11 @@ h4 {
     font-style: italic;
 }
 
+.project-description {
+    fill: #6ad4eb;
+    font-size: 1.15em;   
+}
+
 /* 3. NAV */
 nav ul {
     text-align: center;

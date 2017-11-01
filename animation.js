@@ -112,6 +112,18 @@ krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9
   })
 
 
+  //PROJECT HOVERS
+  //Link symbols:  ⇒ ⇛ ⇢ ↦
+  var project1Hover = new TimelineMax({paused:true});
+  project1Hover.to('.project1-link', 0.75, {transformOrigin:"50% 50%", ease: "Back.easeOut", scale: 1.25, opacity:1}, 0)
+  .to('#project1-text', 0.5, {text:"SaysKez Branding ↦"}, 0);
+ 
+  $("#stop1").hover(function(){
+    project1Hover.play();
+    },function(){
+    project1Hover.reverse();
+  })
+
 
   //MINOR LOCATION HOVERS
   var swampHoverIn = new TimelineMax({paused:true});
