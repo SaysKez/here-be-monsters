@@ -174,8 +174,8 @@ krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9
 
   var spyglassHover = new TimelineMax({paused:true});
   spyglassHover.to('#spyglass', 0.5, {ease: "Back.easeIn", transformOrigin: "50% 50%", rotation: -220}, 0)
-  .to('#spyglass-text1', 0.75, {text:"Current project..."}, 0)
-  .to('#spyglass-text2', 0.75, {text:"Paper Heroes"}, 0.25);
+  .to('#spyglass-text1', 0.5, {text:"Current project..."}, 0)
+  .to('#spyglass-text2', 0.5, {text:"Paper Heroes"});
   
   
   $("#stop3").hover(function(){
