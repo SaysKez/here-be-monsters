@@ -16,6 +16,10 @@
 <body>
   
     <header id="home">
+        <button class="js-menu menu" type="button">
+            <span class="bar"></span>
+        </button>
+
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -148,6 +152,14 @@
                   </g>               
             </symbol>
 
+            <symbol id="spyglass-icon" viewBox="0 0 72 33">
+                <g fill="none" fill-rule="evenodd" stroke="#6AD4EB" stroke-width="2" transform="rotate(15 1.32 17.798)">
+                    <path d="M4.71 2.835H4.69c-.552 0-1 .447-1 1V14.31c.01.552.465.993 1.017.983l22.922-.386c.546-.01.983-.454.983-1V4.22c0-.545-.437-.99-.983-1L4.71 2.836zm26.028 1.82h-.02c-.552 0-1 .447-1 1v7.287c.01.552.468.99 1.02.98l18.436-.374c.544-.01.98-.455.98-1V6.03c0-.545-.436-.99-.98-1l-18.436-.374zm21.544.913h-.026c-.552 0-1 .448-1 1V11.57c.015.552.474.988 1.026.974l13.948-.352c.543-.014.975-.458.975-1v-4.27c0-.544-.432-.987-.975-1l-13.948-.354z"/>
+                    <rect width="1.59" height="16.159" x="1" y="1" rx=".795"/>
+                    <rect width="1" height="8.895" x="68.308" y="4.632" rx=".5"/>
+                </g>
+            </symbol>
+
             <symbol id="bottle-icon" viewBox="0 0 111 38">
                   <g fill="none" fill-rule="evenodd" transform="rotate(-6 65.04 17)">
                     <path stroke="#FFF" stroke-width="3" d="M103.789372,11.3865289 L75.6776873,11.3865289 L75.2861278,10.4829526 C72.9424033,5.07449271 67.6020608,1.5 61.6050952,1.5 L16.4026502,1.5 C8.17214375,1.5 1.5,8.17214375 1.5,16.4026502 C1.5,24.6331566 8.17214375,31.3053004 16.4026502,31.3053004 L61.6050952,31.3053004 C67.5217679,31.3053004 72.8037787,27.8261967 75.195881,22.5263781 L75.5943882,21.6434659 L103.789372,21.6434653 C106.621747,21.6434653 108.91784,19.3473719 108.91784,16.5149971 C108.91784,13.6826223 106.621747,11.3865289 103.789372,11.3865289 Z"/>
@@ -251,10 +263,18 @@
             </text>
 
             <rect id="stop3" fill="#000" x="175" y="389" width="120" height="120"></rect>
+            <use id="spyglass" class="minor-location" x="180" y="440" width="72" height="33" xlink:href="#spyglass-icon" />
+            <text class="location-description">
+                <tspan x="270" y="430" id="spyglass-text1"></tspan>
+                <tspan x="270" y="450" id="spyglass-text2"></tspan>
+            </text>
             
-            <rect id="stop4" fill="#000" x="373" y="225" width="120" height="120"></rect>
-            <use class="minor-location" x="390" y="225" width="100" height="100" xlink:href="#UIE-icon" />
-            
+            <a href="casestudy/uiehub.html"><rect id="stop4" fill="#000" x="373" y="220" width="120" height="120"></rect></a>
+            <use class="minor-location project2-link" x="390" y="225" width="100" height="100" xlink:href="#UIE-icon" />
+            <text class="project-description">
+              <tspan x="370" y="365" id="project2-text"></tspan>
+            </text>
+
             <rect id="stop5" fill="#000" x="592" y="60" width="120" height="120"></rect>
             <use class="minor-location" x="590" y="64" width="76" height="97" xlink:href="#skeleton-icon" />
             <text class="location-description">
@@ -270,9 +290,12 @@
             <rect id="stop7" fill="#000" x="922" y="95" width="120" height="120"></rect>
             <use class="minor-location" x="930" y="160" width="111" height="38" xlink:href="#bottle-icon" />
             
-            <rect id="stop8" fill="#000" x="1228" y="300" width="120" height="120"></rect>
-            <use class="minor-location" x="1228" y="300" width="100" height="100" xlink:href="#packnaut-icon" />
-            
+            <a href="casestudy/packnaut.html"><rect id="stop8" fill="#000" x="1228" y="300" width="120" height="120"></rect></a>
+            <use class="minor-location project3-link" x="1228" y="300" width="100" height="100" xlink:href="#packnaut-icon" />
+            <text class="project-description">
+              <tspan x="1200" y="435" id="project3-text"></tspan>
+            </text>
+
             <rect id="stop9" fill="#000" x="1054" y="565" width="120" height="120"></rect>
 
             <rect id="stop10" fill="#000" x="822" y="802" width="120" height="120"></rect>
@@ -359,7 +382,7 @@
     </div>
 
     <div class="responsive-map">
-      <svg class="border-top" viewBox="0 0 1440 220">
+      <svg class="border-top" viewBox="0 0 1440 129">
         <defs>
           <symbol id="wave-border" viewBox="0 0 1440 129">
               <path fill-rule="evenodd" d="M0,51.8753646 C178.229167,97.4310075 310.751488,120.208829 397.566964,120.208829 C527.790179,120.208829 662.103808,35.1366052 953.102679,14.7791603 C1049.31151,8.04866672 1211.61062,20.4140682 1440,51.8753646 L1440,130 L0,130 L0,51.8753646 Z"/>              
@@ -370,7 +393,7 @@
           </symbol>
         </defs>
 
-        <use xlink:href="#bump-border" />
+        <use xlink:href="#wave-border" />
       </svg>          
       <div>
           <svg id="wordmark" viewBox="0 0 455 85.44">
@@ -407,7 +430,7 @@
             <use xlink:href="#chest-icon" />
         </svg>
         <h3>My Work</h3>
-        <div>
+        <div class="flex-row">
           <svg class="project-icon" viewBox="0 0 500 500">
               <use xlink:href="#UIE-icon" />              
           </svg>
@@ -437,8 +460,8 @@
           <h3>Blog</h3>
       </div>
 
-      <svg class="border-top" viewBox="0 0 1440 220">
-          <use xlink:href="#bump-border" />
+      <svg class="border-top" viewBox="0 0 1440 129">
+          <use xlink:href="#wave-border" />
       </svg>
       <div>
         <svg class="key-location-icon" viewbox="0 0 196 196">              
@@ -458,6 +481,7 @@
             <ul>
               <li><a href="https://twitter.com/SaysKez" target="_blank"><img src="images/social-icons/twitter.svg" alt="Follow me on Twitter" /></a></li>
               <li><a href="https://www.instagram.com/sayskez/" target="_blank"><img src="images/social-icons/instagram.svg" alt="Follow me on Instagram" /></a></li>              
+              <li><a href="mailto:greetings@kez.ie" target="_blank"><img src="images/social-icons/email.svg" alt="Drop me a line"/></a></li>                              
               <li><a href="https://dribbble.com/SaysKez" target="_blank"><img src="images/social-icons/dribbble.svg" alt="Follow me on Dribbble" /></a></li>
               <li><a href="http://sayskez.tumblr.com/" target="_blank"><img src="images/social-icons/tumblr.svg" alt="Follow me on Tumblr"/></a></li>              
             </ul>

@@ -1,3 +1,19 @@
+//NAV
+var isActive = false;
+
+$('.js-menu').on('click', function() {
+	if (isActive) {
+		$(this).removeClass('active');
+		$('body').removeClass('menu-open');
+	} else {
+		$(this).addClass('active');
+		$('body').addClass('menu-open');
+	}
+
+	isActive = !isActive;
+});
+
+
 //OPENING ANIMATION
 var swamp = new TimelineMax();
 swamp.from('#croc', 1, {ease: "Back.easeOut", y: 10, opacity: 0.5});
@@ -102,7 +118,7 @@ krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9
 
   var xHover = new TimelineMax({paused: true});
   xHover.add('start', 0)
-  xHover.to('.x', 0.5, {transformOrigin:"50% 50%", ease: "Back.easeOut", scale:1.1, fill:"#FFF"}, 'start')
+  xHover.to('.x', 0.5, {transformOrigin:"50% 50%", ease: "Back.easeOut", scale:1.1}, 'start')
   .to('#contact-text', 0.5, {text:"X Marks the Spot", fill: "#6ad4eb"}, 'start');
 
   $("#contact-box").hover(function(){
@@ -124,6 +140,26 @@ krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9
     project1Hover.reverse();
   })
 
+  var project2Hover = new TimelineMax({paused:true});
+  project2Hover.to('.project2-link', 0.75, {transformOrigin:"50% 50%", ease: "Back.easeOut", scale: 1.25, opacity:1}, 0)
+  .to('#project2-text', 0.5, {text:"Allstate UIE Hub ↦"}, 0);
+ 
+  $("#stop4").hover(function(){
+    project2Hover.play();
+    },function(){
+    project2Hover.reverse();
+  })
+
+  var project3Hover = new TimelineMax({paused:true});
+  project3Hover.to('.project3-link', 0.75, {transformOrigin:"50% 50%", ease: "Back.easeOut", scale: 1.25, opacity:1}, 0)
+  .to('#project3-text', 0.5, {text:"Pack-Naut App ↦"}, 0);
+ 
+  $("#stop8").hover(function(){
+    project3Hover.play();
+    },function(){
+    project3Hover.reverse();
+  })
+
 
   //MINOR LOCATION HOVERS
   var swampHoverIn = new TimelineMax({paused:true});
@@ -134,6 +170,18 @@ krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9
       swampHoverIn.play();
     },function(){
       swampHoverIn.reverse();
+  })
+
+  var spyglassHover = new TimelineMax({paused:true});
+  spyglassHover.to('#spyglass', 0.5, {ease: "Back.easeIn", transformOrigin: "50% 50%", rotation: -220}, 0)
+  .to('#spyglass-text1', 0.5, {text:"Current project..."}, 0)
+  .to('#spyglass-text2', 0.5, {text:"Paper Heroes"});
+  
+  
+  $("#stop3").hover(function(){
+      spyglassHover.play();
+    },function(){
+      spyglassHover.reverse();
   })
 
   var skeletonHover = new TimelineMax({paused:true});
