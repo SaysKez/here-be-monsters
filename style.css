@@ -77,7 +77,11 @@ h4 {
 .location-description {
     fill: #6ad4eb;
     font-style: italic;
-    opacity: 0;
+}
+
+.project-description {
+    fill: #6ad4eb;
+    font-size: 1.15em;   
 }
 
 /* 3. NAV */
@@ -107,6 +111,7 @@ nav a {
     width: 100%;
     background-color: #6ad4eb;        
 }
+
 
 .trails {
     stroke: #FFF;
@@ -331,6 +336,10 @@ p.project-type {
 
 .casestudy .border-top {
     margin-top: 4em;
+}
+
+.long-title .border-top {
+    margin-top: 10em;
 }
 
 .project-header {

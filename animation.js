@@ -1,36 +1,32 @@
+//OPENING ANIMATION
 var swamp = new TimelineMax();
-swamp.from('#croc', 1, {y: 10, opacity: 0.5});
+swamp.from('#croc', 1, {ease: "Back.easeOut", y: 10, opacity: 0.5});
 
-/*
-var green = document.getElementById("swamp-icon");
-var croc = document.getElementById("croc");
+var x = new TimelineMax();
+x.from('.x', 1, {transformOrigin:"50% 50%", ease:"Elastic.easeOut", scale:2});
 
 
-green.onmouseenter = function(){
-    TweenMax.to(croc, 1, {y:40, opacity: 0.5});
-}
 
-green.onmouseleave = function(){
-    TweenMax.from(croc, 1, {y:40, opacity: 0.5});
-}
+/* Testing out Jake Archibald's path drawing technique
+https://jakearchibald.com/2013/animated-line-drawing-svg/
+
+var path = document.querySelector('.trails');
+var length = path.getTotalLength();
+// Clear any previous transition
+path.style.transition = path.style.WebkitTransition =
+  'none';
+// Set up the starting positions
+path.style.strokeDasharray = length + ' ' + length;
+path.style.strokeDashoffset = length;
+// Trigger a layout so styles are calculated & the browser
+// picks up the starting position before animating
+path.getBoundingClientRect();
+// Define our transition
+path.style.transition = path.style.WebkitTransition =
+  'stroke-dashoffset 2s ease-in-out';
+// Go!
+path.style.strokeDashoffset = '0';
 */
-
-var swampHoverIn = new TimelineMax({paused:true});
-swampHoverIn.to('#croc', 1, {y: 2, opacity: 0.8}, 0)
-.to('.location-description', 0.5, {opacity: 1}, 0)
-.to('.replace-text', 1, {text:"Javascript", ease:Linear.easeNone}, "+=0.5")
-.to('.replace-text', 1, {text:"SVGs", ease:Linear.easeNone}, "+=0.5")
-.to('.replace-text', 1, {text:"ReactJS", ease:Linear.easeNone}, "+=0.5");
-
-var swampHoverOut = new TimelineMax({paused:true});
-swampHoverOut.to('.location-description', 0.5, {opacity: 0}, 0);
-
-
-$("#swamp-icon").hover(function(){
-    swampHoverIn.play();
-  },function(){
-    swampHoverOut.play();
-  })
 
 
 //KET LOCATION REPEAT
@@ -113,4 +109,51 @@ krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9
     xHover.play();
   },function(){
     xHover.reverse();
+  })
+
+
+  //PROJECT HOVERS
+  //Link symbols:  ⇒ ⇛ ⇢ ↦
+  var project1Hover = new TimelineMax({paused:true});
+  project1Hover.to('.project1-link', 0.75, {transformOrigin:"50% 50%", ease: "Back.easeOut", scale: 1.25, opacity:1}, 0)
+  .to('#project1-text', 0.5, {text:"SaysKez Branding ↦"}, 0);
+ 
+  $("#stop1").hover(function(){
+    project1Hover.play();
+    },function(){
+    project1Hover.reverse();
+  })
+
+
+  //MINOR LOCATION HOVERS
+  var swampHoverIn = new TimelineMax({paused:true});
+  swampHoverIn.to('#croc', 0.75, {ease: "Back.easeIn", y: 10, opacity: 0.8}, 0)
+  .to('#swamp-text', 0.75, {text:"Swamps of Javascript"}, 0);
+  
+  $("#stop2").hover(function(){
+      swampHoverIn.play();
+    },function(){
+      swampHoverIn.reverse();
+  })
+
+  var skeletonHover = new TimelineMax({paused:true});
+  skeletonHover.to('#skeleton-sword', 0.25, {transformOrigin: "50% 100%", scaleY:0.8}, 0)
+  .to('#skeleton-text', 0.75, {text:"Problem Assassin"}, 0);
+  
+  $("#stop5").hover(function(){
+    skeletonHover.play();
+    },function(){
+    skeletonHover.reverse();
+  })
+
+  var caveHover = new TimelineMax({paused:true});
+  //caveHover.to('#cave-eyes', 0.25, {ease:"Back.easeIn", transformOrigin: "50% 50%", scale:1.2}, 0)  
+  caveHover.to('#cave-eyes', 0.2, {ease:"Back.easeOut", transformOrigin: "50% 50%", scaleY:0, repeat:2, yoyo:true})
+  .to('#cave-eyes', 0.2, {ease:"Back.easeOut", transformOrigin: "50% 50%", scaleY:1})  
+  .to('#cave-text', 0.75, {text:"Creative Monster"}, 0);
+  
+  $("#stop6").hover(function(){
+    caveHover.play();
+    },function(){
+    caveHover.reverse();
   })
