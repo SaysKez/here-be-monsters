@@ -11,7 +11,7 @@
 
 body {
     width: 100%;
-    font-family: futura-pt, Futura, sans-serif;
+    font-family: "futura-pt", Futura, sans-serif;
     font-weight: 500;
     margin: auto;
     color: #000000;
@@ -33,10 +33,14 @@ p {
     max-width: 850px;
 }
 
+h1, h2, h3, h4 {
+    font-family: "futura-pt", Futura, sans-serif;    
+    font-weight: 800;    
+}
+
 h1 {
     font-size: 6.854em; 
     font-family: Futura, sans-serif;
-    font-weight: 700;
     text-transform: uppercase;
     text-align: center;
     width: 68%;
