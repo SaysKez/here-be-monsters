@@ -12,7 +12,7 @@
 body {
     width: 100%;
     font-family: "futura-pt", Futura, sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     margin: auto;
     color: #000000;
     background-color: #6ad4eb;        
@@ -65,26 +65,28 @@ h4 {
 }
 
 .key-location-text {
-    font-family: futura-pt, Futura, sans-serif;
+    font-family: "futura-pt", Futura, sans-serif;
     font-size: 1.618em;
-    font-weight: bold;
+    font-weight: 700;
     fill: #FFF;
 }
 
 .intro-text {
-    font-family: futura-pt, Futura, sans-serif;
+    font-family: "futura-pt", Futura, sans-serif;
     font-size: 1.3em;
-    font-weight: 400;
+    font-weight: 500;
     fill: #FFF;    
 }
 
 .location-description {
     fill: #6ad4eb;
+    font-weight: 400;
     font-style: italic;
 }
 
 .project-description {
     fill: #6ad4eb;
+    font-weight: 700;    
     font-size: 1.15em;   
 }
 
