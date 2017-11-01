@@ -11,8 +11,8 @@
 
 body {
     width: 100%;
-    font-family: futura-pt, Futura, sans-serif;
-    font-weight: 500;
+    font-family: "futura-pt", Futura, sans-serif;
+    font-weight: 400;
     margin: auto;
     color: #000000;
     background-color: #6ad4eb;        
@@ -33,10 +33,14 @@ p {
     max-width: 850px;
 }
 
+h1, h2, h3, h4 {
+    font-family: "futura-pt", Futura, sans-serif;    
+    font-weight: 800;    
+}
+
 h1 {
     font-size: 6.854em; 
     font-family: Futura, sans-serif;
-    font-weight: 700;
     text-transform: uppercase;
     text-align: center;
     width: 68%;
@@ -61,26 +65,28 @@ h4 {
 }
 
 .key-location-text {
-    font-family: futura-pt, Futura, sans-serif;
+    font-family: "futura-pt", Futura, sans-serif;
     font-size: 1.618em;
-    font-weight: bold;
+    font-weight: 700;
     fill: #FFF;
 }
 
 .intro-text {
-    font-family: futura-pt, Futura, sans-serif;
+    font-family: "futura-pt", Futura, sans-serif;
     font-size: 1.3em;
-    font-weight: 400;
+    font-weight: 500;
     fill: #FFF;    
 }
 
 .location-description {
     fill: #6ad4eb;
+    font-weight: 400;
     font-style: italic;
 }
 
 .project-description {
     fill: #6ad4eb;
+    font-weight: 700;    
     font-size: 1.15em;   
 }
 
@@ -204,11 +210,6 @@ nav a {
   nav ul li:hover {
     background: #6ad4eb;
     color: #6ad4eb;    
-  }
-
-  .nav-icon {
-      width: 1em;
-      display: inline;
   }
 
 
