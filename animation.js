@@ -1,3 +1,19 @@
+//NAV
+var isActive = false;
+
+$('.js-menu').on('click', function() {
+	if (isActive) {
+		$(this).removeClass('active');
+		$('body').removeClass('menu-open');
+	} else {
+		$(this).addClass('active');
+		$('body').addClass('menu-open');
+	}
+
+	isActive = !isActive;
+});
+
+
 //OPENING ANIMATION
 var swamp = new TimelineMax();
 swamp.from('#croc', 1, {ease: "Back.easeOut", y: 10, opacity: 0.5});

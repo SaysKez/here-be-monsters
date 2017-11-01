@@ -84,7 +84,7 @@ h4 {
     font-size: 1.15em;   
 }
 
-/* 3. NAV */
+/* 3. NAV 
 nav ul {
     text-align: center;
 }
@@ -96,7 +96,116 @@ nav ul li {
 
 nav a {
     color: #000;    
-}
+} */
+
+/* HAMBURGER */
+.menu {
+    -webkit-transition: 0.1s -webkit-transform linear;
+    transition: 0.1s -webkit-transform linear;
+    transition: 0.1s transform linear;
+    transition: 0.1s transform linear, 0.1s -webkit-transform linear;
+    position: relative;
+    background: 0;
+    float: left;
+    margin: 2rem;
+    height: 2.7rem;
+    width: 3.5rem;
+    z-index: 1;
+    outline: 0;
+    padding: 0;
+    border: 0;
+
+    position: absolute;
+    z-index: 300;
+  }
+  
+  .bar, .bar::before, .bar::after {
+    -webkit-transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s -webkit-transform linear;
+    transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s -webkit-transform linear;
+    transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear;
+    transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear, 0.2s -webkit-transform linear;
+    position: absolute;
+    background: #000;
+    margin: auto;
+    width: 100%;
+    height: 0.4rem;
+    border-radius: 2em;
+    content: '';
+    top: 50%;
+    left: 0;
+  }
+  .bar {
+    margin-top: -0.1rem;
+  }
+  .bar::before {
+    top: -1.1rem;
+  }
+  .bar::after {
+    top: 1.1rem;
+  }
+  .bar::before, .bar::after {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  .active .bar {
+    background: 0;
+  }
+  .active .bar::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .active .bar::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .active .bar::before, .active .bar::after {
+    top: 0;
+  }
+  .active .bar, .active .bar::before, .active .bar::after {
+    -webkit-transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s -webkit-transform linear 0.2s;
+    transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s -webkit-transform linear 0.2s;
+    transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s;
+    transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s, 0.2s -webkit-transform linear 0.2s;
+  }
+  
+  nav {
+    width: 250px;
+    height: 100%;
+    background: #FFF;
+    position: fixed;
+    -webkit-transform: translateX(-250px);
+            transform: translateX(-250px);
+    -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
+    transition: -webkit-transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
+    transition: transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
+    transition: transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91), -webkit-transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
+    padding-top: 6.2rem;
+    z-index: 200;
+  }
+  .menu-open nav {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  nav ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+  }
+
+  nav a {
+      color: #000;
+      font-weight: bold;
+  }
+  nav ul li {
+    padding: 0.5em 1em;
+    font-size: 1.25rem;
+  }
+
+  nav ul li:hover {
+    background: #000;
+    color: #6ad4eb;    
+  }
+
 
 
 /* 4. MAP */
