@@ -124,6 +124,26 @@ krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9
     project1Hover.reverse();
   })
 
+  var project2Hover = new TimelineMax({paused:true});
+  project2Hover.to('.project2-link', 0.75, {transformOrigin:"50% 50%", ease: "Back.easeOut", scale: 1.25, opacity:1}, 0)
+  .to('#project2-text', 0.5, {text:"Allstate UIE Hub ↦"}, 0);
+ 
+  $("#stop4").hover(function(){
+    project2Hover.play();
+    },function(){
+    project2Hover.reverse();
+  })
+
+  var project3Hover = new TimelineMax({paused:true});
+  project3Hover.to('.project3-link', 0.75, {transformOrigin:"50% 50%", ease: "Back.easeOut", scale: 1.25, opacity:1}, 0)
+  .to('#project3-text', 0.5, {text:"Pack-Naut App ↦"}, 0);
+ 
+  $("#stop8").hover(function(){
+    project3Hover.play();
+    },function(){
+    project3Hover.reverse();
+  })
+
 
   //MINOR LOCATION HOVERS
   var swampHoverIn = new TimelineMax({paused:true});
