@@ -275,11 +275,11 @@ nav a {
 }
 
 .parallax-wrapper {
-    margin-bottom: 5em;
+    margin-bottom: 14em;
 }
 
 .parallax-footer {
-    height: 5em;
+    height: 14em;
     bottom: -1em;
 }
 
@@ -322,6 +322,14 @@ p {
     line-height: 1.5em;
     margin: 1.5em auto;
 }
+
+.footer-icon {
+    display: block;
+    margin: 1.5em auto;
+    width: 8%;
+}
+
+
 
 
 /* PORTFOLIO */
