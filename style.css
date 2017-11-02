@@ -74,7 +74,7 @@ h4 {
 .intro-text {
     font-family: "futura-pt", Futura, sans-serif;
     font-size: 1.3em;
-    font-weight: 500;
+    font-weight: 400;
     fill: #FFF;    
 }
 
@@ -200,7 +200,7 @@ nav a {
 
   nav a {
       color: #000;
-      font-weight: bold;
+      font-weight: 700;
   }
   nav ul li {
     padding: 0.5em 1em;
@@ -275,18 +275,18 @@ nav a {
 }
 
 .parallax-wrapper {
-    margin-bottom: 5em;
+    margin-bottom: 14em;
 }
 
 .parallax-footer {
-    height: 5em;
+    height: 14em;
     bottom: -1em;
 }
 
 .border-top {
     width: 100%;
     height: auto;
-    margin-bottom: -0.2em;
+    margin-bottom: -0.3em;
     z-index: 2;
 }
 
@@ -322,6 +322,14 @@ p {
     line-height: 1.5em;
     margin: 1.5em auto;
 }
+
+.footer-icon {
+    display: block;
+    margin: 1.5em auto;
+    width: 8%;
+}
+
+
 
 
 /* PORTFOLIO */
@@ -454,7 +462,7 @@ p.project-type {
 }
 
 .long-title .border-top {
-    margin-top: 10em;
+    margin-top: 9em;
 }
 
 .project-header {
@@ -544,9 +552,12 @@ p.project-type {
 
 .icon-flex {
     width: 25%;
-    height: auto;
     display: block;
     margin: 2em;
+}
+
+.narrow {
+    width: 12%;
 }
 
 
