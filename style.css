@@ -73,7 +73,7 @@ h4 {
 
 .intro-text {
     font-family: "futura-pt", Futura, sans-serif;
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: 400;
     fill: #FFF;    
 }
@@ -587,6 +587,13 @@ p.project-type {
 @media (max-width: 750px) {
 
     /* GENERAL */
+    .menu {
+        position: relative;
+    }
+
+    nav {
+        top: 0;
+    }
 
     .responsive-map {
         display: block;
