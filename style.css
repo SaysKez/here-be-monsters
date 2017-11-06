@@ -586,6 +586,25 @@ p.project-type {
 
 @media (max-width: 42em) {
 
+    /* TYPOGRAPHY */
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+
+
     /* GENERAL */
     .menu {
         position: relative;
@@ -648,4 +667,44 @@ p.project-type {
         margin: auto;
     }
 
+
+
+    /* PORTFOLIO */
+
+    .parallax-bg {
+        margin-top: -3em;
+    }
+
+    .parallax-footer {
+        height: 12em;
+    }
+
+    .flex-container {
+        width: 100%;
+        flex-direction: column;
+        padding: 0.5em 0;
+        border: none;
+        border-top: 0.25em solid #6ad4eb;
+        border-bottom: 0.25em solid #6ad4eb;
+        border-radius: 0;
+        display: block;
+        margin: 1em auto;
+    }
+
+    .flex-item {
+        text-align: center;
+        align-content: center;
+        display: block;
+        margin: auto;
+    }
+
+    .flex-item h3 {
+        text-align: center;
+    }
+
+    .flex-item svg {
+        display: block;
+    }
+
+    
 }
