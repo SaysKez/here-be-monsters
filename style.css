@@ -22,6 +22,12 @@ a {
     text-decoration: none;
 }
 
+p a {
+    color: #FFF;
+    text-decoration: underline;
+    text-decoration-color: #6ad4eb;
+}
+
 .responsive-map {
     display: none;
 }
@@ -737,6 +743,10 @@ p.project-type {
         display: block;
         margin: auto;
         width: 50%;
+    }
+
+    .long-title .border-top {
+        margin-top: 5em;
     }
     
 }
