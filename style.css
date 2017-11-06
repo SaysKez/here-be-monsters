@@ -584,7 +584,7 @@ p.project-type {
 
 /* HOME RESPONSIVE */
 
-@media (max-width: 750px) {
+@media (max-width: 42em) {
 
     /* GENERAL */
     .menu {
