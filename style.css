@@ -174,12 +174,28 @@ button:hover {
     cursor: pointer;
     transform: scale(1.05);
 }
+
+/*
+.nav-trim {
+    height: 2em;
+    margin-bottom: -1rem;
+    transform: translateX(140px);
+    display: none;
+    fill: #6ad4eb;
+}
+
+
+nav li:hover .nav-trim {
+    display: inline;
+}
+
+*/
   
   nav {
     width: 250px;
     height: 100%;
-    background: #FFF;
     position: fixed;
+    background: #FFF;        
     -webkit-transform: translateX(-250px);
             transform: translateX(-250px);
     -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
@@ -202,15 +218,15 @@ button:hover {
   nav a {
       color: #000;
       font-weight: 700;
+      line-height: 2em;
   }
   nav ul li {
-    padding: 0.5em 1em;
-    font-size: 1.25rem;
+    padding: 0em 1.1em;
+    font-size: 1.618rem;
   }
 
   nav ul li:hover {
     background: #6ad4eb;
-    color: #6ad4eb;    
   }
 
 
