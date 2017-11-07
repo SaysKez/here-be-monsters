@@ -681,6 +681,16 @@ p.project-type {
         color: #000;
     }
 
+
+    div.water .button {
+        background-color: #6ad4eb;
+    }
+
+    div.water .button a {
+        background-color: #000;
+        color: #FFF;
+    }
+
     /* INTRO */
 
     #wordmark {
