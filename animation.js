@@ -161,6 +161,17 @@ krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9
   })
 
 
+  var logbookHover = new TimelineMax({paused:true});
+  logbookHover.to('.blog-link', 0.75, {transformOrigin:"50% 50%", ease: "Back.easeOut", scale: 1.25, opacity:1}, 0)
+  .to('#logbook-text', 0.5, {text:"Captain's Log ↦"}, 0);
+ 
+  $("#stop9").hover(function(){
+    logbookHover.play();
+    },function(){
+      logbookHover.reverse();
+  })
+
+
   //MINOR LOCATION HOVERS
   var swampHoverIn = new TimelineMax({paused:true});
   swampHoverIn.to('#croc', 0.6, {ease: "Back.easeIn", y: 10, opacity: 0.8}, 0)
@@ -207,7 +218,7 @@ krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9
   })
 
   var bottleHover = new TimelineMax({paused:true});
-  bottleHover.to('#bottled-ship', 0.75, {rotation:-3, x:-6, scaleX:1.05, repeat:2, yoyo:true, transformOrigin: "50% 50%"}, 0)
+  bottleHover.to('#bottled-ship', 0.5, {rotation:-3, x:-4, scaleX:1.05, repeat:2, yoyo:true, transformOrigin: "50% 50%"}, 0)
   .to('#bottle-text', 0.75, {text:"Side Projects Brewing"}, 0);
   
   $("#stop7").hover(function(){

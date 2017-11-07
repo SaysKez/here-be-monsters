@@ -39,12 +39,6 @@ p, li {
     max-width: 850px;
 }
 
-li {
-    color: #FFF;
-    margin: 1em auto;
-    line-height: 1.5em;
-}
-
 h1, h2, h3, h4 {
     font-family: "futura-pt", Futura, sans-serif;    
     font-weight: 700;    
@@ -290,7 +284,7 @@ nav li:hover .nav-trim {
 }
 
 .social img {
-    width: 3.25em;
+    width: 2.5em;
     margin: auto 0.5em auto 0.5em;
 }
 
@@ -587,6 +581,14 @@ p.project-type {
 
 .narrow {
     width: 10%;
+}
+
+
+/* CV */
+.flex-project-item li {
+    color: #FFF;
+    margin: 1em auto;
+    line-height: 1.5em;
 }
 
 
