@@ -615,23 +615,23 @@ p.project-type {
 
 /* HOME RESPONSIVE */
 
-@media (max-width: 42em) {
+@media (max-width: 45em) {
 
     /* TYPOGRAPHY */
     h1 {
-        font-size: 3em;
+        font-size: 3.25em;
     }
 
     h2 {
-        font-size: 2.5em;
+        font-size: 3em;
     }
 
     h3 {
-        font-size: 2em;
+        font-size: 2.5em;
     }
 
     h4 {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     p {
@@ -661,6 +661,7 @@ p.project-type {
         color: #FFF;
         width: 80%;
         text-align: center;
+        margin: 0.75em auto;
     }
 
     .responsive-map div {
@@ -668,8 +669,16 @@ p.project-type {
         padding: 1.5em 0em;  
     }
 
+    .responsive-map .button {
+        padding: 0.5em 0em;
+    }
+
     div.water {
         background-color: #6ad4eb;
+    }
+
+    div.water p {
+        color: #000;
     }
 
     /* INTRO */
@@ -681,10 +690,11 @@ p.project-type {
     }
 
     .key-location-icon {
-        width: 25%;
-        height: auto;
+        height: 8em;
+        width: auto;
         display: block;
-        margin: auto;
+        margin: 5em auto 1em auto;
+        transform-origin: 50% 50%;
     }
 
     .project-icon {

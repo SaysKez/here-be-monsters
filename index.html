@@ -90,7 +90,9 @@
                 <g fill="none" fill-rule="evenodd" transform="translate(0 -2)">
                   <path fill="#FFF" d="M0 44h100v41H0z"/>
                   <path fill="#FFF" d="M22 2h56c12.15 0 22 9.85 22 22H0C0 11.85 9.85 2 22 2z"/>
-                  <path id="chest-inside" class="chest-highlight" stroke="#FFF" fill="#000" d="M0 24h100l-13.218 8.904L100 44H0l12.513-11.096z"/>
+                  <g class="chest-inside">
+                  <path class="chest-highlight" stroke="#FFF" fill="#000" d="M0 24h100l-13.218 8.904L100 44H0l12.513-11.096z"/>
+                  </g>
                   <path class="chest-highlight" fill="#000" d="M48.92 53.8C47.797 53.366 47 52.276 47 51c0-1.657 1.343-3 3-3s3 1.343 3 3c0 1.276-.797 2.366-1.92 2.8L53 61h-6l1.92-7.2z"/>
                   <path stroke="#FFF" d="M87.087 33.135H11.85"/>
                   <path id="chest-stoke" stroke="#000" d="M20.92 42.95v42.13M80 43v42.13M66 .878c6.417 0 10.958 7.72 13.623 23.157v.74M34.227 1C27.81 1 23.27 8.744 20.604 24.233v.665"/>
@@ -372,7 +374,7 @@
             <!-- Key Location Icons
             Safari and Firefox don't like the transforms so each use wrapped in <g> for scale on hover-->
 
-              <g id="ship">
+              <g class="ship">
                 <use x="200" y="785" width="118" height="86" xlink:href="#ship-icon" />
               </g>
               <a href="about.html">
@@ -479,7 +481,9 @@
 
       <div class="water">
           <svg class="key-location-icon" viewBox="0 0 118 86">
-              <use xlink:href="#ship-icon" />
+              <g class="ship">
+                <use xlink:href="#ship-icon" />
+              </g>
           </svg>
       </div>
 
@@ -488,12 +492,32 @@
       </svg>
       <div>
         <h3>About Me</h3>
-        <p>All about me</p>
-        <div class="button"><a href="../portfolio.html">Tell Me More</a></div> 
+        <p>Who is this monster maker? Come sailing and find out.</p>
+        <div class="button"><a href="about.html">Tell Me More</a></div> 
+        
         
         <svg class="key-location-icon" viewBox="0 0 100 84">
             <use xlink:href="#chest-icon" />
         </svg>
+      
+        <!-- Testing how to fix buggy animation when in responsive view -->
+      <!--
+      <svg class="key-location-icon" viewBox="0 0 100 84">
+          <title>Treasure Chest</title>
+          <desc>Treasure chest opening temptingly</desc>              
+          <defs/>
+          <g fill="none" fill-rule="evenodd" transform="translate(0 -2)">
+            <path fill="#FFF" d="M0 44h100v41H0z"/>
+            <path fill="#FFF" d="M22 2h56c12.15 0 22 9.85 22 22H0C0 11.85 9.85 2 22 2z"/>
+            <g class="chest-inside">
+            <path class="chest-highlight" stroke="#FFF" fill="#000" d="M0 24h100l-13.218 8.904L100 44H0l12.513-11.096z"/>
+            </g>
+            <path class="chest-highlight" fill="#000" d="M48.92 53.8C47.797 53.366 47 52.276 47 51c0-1.657 1.343-3 3-3s3 1.343 3 3c0 1.276-.797 2.366-1.92 2.8L53 61h-6l1.92-7.2z"/>
+            <path stroke="#FFF" d="M87.087 33.135H11.85"/>
+            <path id="chest-stoke" stroke="#000" d="M20.92 42.95v42.13M80 43v42.13M66 .878c6.417 0 10.958 7.72 13.623 23.157v.74M34.227 1C27.81 1 23.27 8.744 20.604 24.233v.665"/>
+          </g>
+        </svg>
+      -->
         <h3>My Work</h3>
         <div class="flex-row">
           <svg class="project-icon" viewBox="0 0 500 500">
@@ -506,13 +530,14 @@
               <use xlink:href="#sayskez-icon" />              
           </svg>
         </div>
-        <div class="button"><a href="../portfolio.html">See More</a></div> 
+        <div class="button"><a href="portfolio.html">Discover More</a></div> 
 
         <svg class="key-location-icon" viewBox="0 0 118 129">
             <use xlink:href="#flag-icon" />
         </svg>
-        <h3>My Experience</h3>
-        <div class="button"><a href="../portfolio.html">Learn More</a></div> 
+        <h3>My Capabilities</h3>
+        <p>Like what you see? I'm a pirate for hire. Checkout my CV and let's work together.</p>        
+        <div class="button"><a href="cv.html">Peruse the CV</a></div> 
       </div>
       <svg class="border-bottom" viewBox="0 0 1440 220">
           <use xlink:href="#bump-border" />
@@ -523,6 +548,7 @@
               <use xlink:href="#kraken-icon" />
           </svg>
           <h3>Blog</h3>
+          <p>My musings, discoveries, and behind the scenes process. Warning: Here Be Monsters.</p>                
       </div>
 
       <svg class="border-top" viewBox="0 0 1440 129">
@@ -532,7 +558,10 @@
         <svg class="key-location-icon" viewbox="0 0 196 196">              
             <polygon fill="#6AD4EB" fill-rule="evenodd" points="155.942 0 98 57.942 40.058 0 0 40.059 57.942 98 0 155.942 40.058 196 98 138.059 155.942 196 196 155.942 138.059 98 196 40.059"/>                    
         </svg>
-        <h3>Let's Talk</h3>
+        <h3>Contact Me</h3>
+        <p>Need a design with personality? Got a monster sized hole in your team? Just want to chat? Drop me a line.</p>
+        <div class="button"><a href="contact.html">Let's Talk</a></div> 
+        
       </div>
       <svg class="border-bottom" viewBox="0 0 1440 129">
           <use xlink:href="#wave-border" />

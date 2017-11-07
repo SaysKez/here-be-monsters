@@ -48,10 +48,10 @@ path.style.strokeDashoffset = '0';
 //KEY LOCATION REPEAT
 var shipRepeat = new TimelineMax({repeat:-1, yoyo:true, repeatDelay:0.05});
 shipRepeat.add('start', 0)
-.fromTo('#ship', 1, { rotation:-3, transformOrigin: "50% 50%"}, {rotation:3, transformOrigin: "50% 50%"}, 'start');
+.fromTo('.ship', 1, { rotation:-3, transformOrigin: "50% 50%"}, {rotation:3, transformOrigin: "50% 50%"}, 'start');
 
 var chestRepeat = new TimelineMax({repeat:-1, yoyo:true, repeatDelay:1});
-chestRepeat.to('#chest-inside', 1, {ease: "Back.easeOut", transformOrigin: "50% 50%", scaleY: 1.3}, 0);
+chestRepeat.to('.chest-inside', 1, {ease: "Back.easeOut", transformOrigin: "50% 50%", scaleY: 1.3}, 0);
 
 var flagRepeat = new TimelineMax({repeat:-1, yoyo:true});
 flagRepeat.add('start', 0)
@@ -68,7 +68,7 @@ krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9
 
   var shipHover = new TimelineMax({paused: true});
   shipHover.add('start', 0)
-  shipHover.to('#ship', 0.5, {transformOrigin: "50% 50%", ease: "Back.easeOut", scale:1.1}, 'start')
+  shipHover.to('.ship', 0.5, {transformOrigin: "50% 50%", ease: "Back.easeOut", scale:1.1}, 'start')
   .to('.ship-highlight', 0.5, {fill:"#6ad4eb", stroke:"#6ad4eb"}, 'start')
   .to('#about-text', 0.5, {text:"Come Sailing", fill: "#6ad4eb"}, 'start');
 
