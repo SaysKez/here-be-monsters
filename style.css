@@ -34,9 +34,15 @@ p a {
 
 /* 2.1 TYPOGRAPHY */
 
-p {
+p, li {
     font-size: 1.25em;
     max-width: 850px;
+}
+
+li {
+    color: #FFF;
+    margin: 1em auto;
+    line-height: 1.5em;
 }
 
 h1, h2, h3, h4 {
