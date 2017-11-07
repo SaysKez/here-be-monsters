@@ -45,7 +45,7 @@ path.style.strokeDashoffset = '0';
 */
 
 
-//KET LOCATION REPEAT
+//KEY LOCATION REPEAT
 var shipRepeat = new TimelineMax({repeat:-1, yoyo:true, repeatDelay:0.05});
 shipRepeat.add('start', 0)
 .fromTo('#ship', 1, { rotation:-3, transformOrigin: "50% 50%"}, {rotation:3, transformOrigin: "50% 50%"}, 'start');
@@ -163,7 +163,7 @@ krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9
 
   //MINOR LOCATION HOVERS
   var swampHoverIn = new TimelineMax({paused:true});
-  swampHoverIn.to('#croc', 0.75, {ease: "Back.easeIn", y: 10, opacity: 0.8}, 0)
+  swampHoverIn.to('#croc', 0.6, {ease: "Back.easeIn", y: 10, opacity: 0.8}, 0)
   .to('#swamp-text', 0.75, {text:"Swamps of Javascript"}, 0);
   
   $("#stop2").hover(function(){
@@ -204,4 +204,14 @@ krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9
     caveHover.play();
     },function(){
     caveHover.reverse();
+  })
+
+  var bottleHover = new TimelineMax({paused:true});
+  bottleHover.to('#bottled-ship', 0.75, {rotation:-3, x:-6, scaleX:1.05, repeat:2, yoyo:true, transformOrigin: "50% 50%"}, 0)
+  .to('#bottle-text', 0.75, {text:"Side Projects Brewing"}, 0);
+  
+  $("#stop7").hover(function(){
+    bottleHover.play();
+    },function(){
+      bottleHover.reverse();
   })
