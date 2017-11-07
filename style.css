@@ -288,6 +288,14 @@ nav li:hover .nav-trim {
     margin: auto 0.5em auto 0.5em;
 }
 
+footer p {
+    font-size: 0.8em;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+    margin: 0.75em auto;
+}
+
 
 
 /* GENERAL SECTION STYLING */
