@@ -46,7 +46,7 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: 6.854em; 
-    font-family: Futura, sans-serif;
+    font-family: "futura-pt", Futura, sans-serif;    
     text-transform: uppercase;
     text-align: center;
     width: 68%;
