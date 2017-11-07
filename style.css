@@ -548,6 +548,10 @@ p.project-type {
     /* font-style: italic; */
 }
 
+.footnote {
+    text-align: center;
+    font-weight: 700;
+}
 
 /* CONTACT */
 .contact h3 a {
