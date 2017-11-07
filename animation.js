@@ -128,7 +128,7 @@ krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9
   })
 
 
-  //PROJECT HOVERS
+  //LINK HOVERS
   //Link symbols:  ⇒ ⇛ ⇢ ↦
   var project1Hover = new TimelineMax({paused:true});
   project1Hover.to('.project1-link', 0.75, {transformOrigin:"50% 50%", ease: "Back.easeOut", scale: 1.25, opacity:1}, 0)
@@ -175,7 +175,7 @@ krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9
   //MINOR LOCATION HOVERS
   var swampHoverIn = new TimelineMax({paused:true});
   swampHoverIn.to('#croc', 0.6, {ease: "Back.easeIn", y: 10, opacity: 0.8}, 0)
-  .to('#swamp-text', 0.75, {text:"Swamps of Javascript"}, 0);
+  .to('#swamp-text', 0.75, {text:"Swamps of Code"}, 0);
   
   $("#stop2").hover(function(){
       swampHoverIn.play();
@@ -225,4 +225,19 @@ krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9
     bottleHover.play();
     },function(){
       bottleHover.reverse();
+  })
+
+  //logbook
+
+  var palmHover = new TimelineMax({paused:true});
+  palmHover.from('#palm-sound1', 0.15, {fontSize:3, opacity:0, ease:"Back.easeOut"}, 0)
+  palmHover.from('#palm-sound2', 0.15, {fontSize:3, opacity:0, ease:"Back.easeOut"}, '+=0.1')
+  palmHover.to('#palm-sound1', 0.1, {opacity:0, ease:"Back.easeOut"})
+  palmHover.to('#palm-sound2', 0.1, {opacity:0, ease:"Back.easeOut"}, '+=0.1')
+  .to('#palm-text', 0.75, {text:"Illustrator Monkey"}, 0);
+  
+  $("#stop10").hover(function(){
+    palmHover.play();
+    },function(){
+      palmHover.reverse();
   })
