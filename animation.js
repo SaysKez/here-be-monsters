@@ -230,11 +230,10 @@ krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9
   //logbook
 
   var palmHover = new TimelineMax({paused:true});
-  palmHover.from('#palm-sound1', 0.15, {fontSize:3, opacity:0, ease:"Back.easeOut"}, 0)
-  palmHover.from('#palm-sound2', 0.15, {fontSize:3, opacity:0, ease:"Back.easeOut"}, '+=0.1')
-  palmHover.to('#palm-sound1', 0.1, {opacity:0, ease:"Back.easeOut"})
-  palmHover.to('#palm-sound2', 0.1, {opacity:0, ease:"Back.easeOut"}, '+=0.1')
-  .to('#palm-text', 0.75, {text:"Illustrator Monkey"}, 0);
+  palmHover.from('#palm1', 0.2, {rotation: -5, transformOrigin:"50% 100%", repeat:3, yoyo:true, ease:"Bounce.easeIn"}, 0)
+  .from('#palm2', 0.2, {rotation: 5, transformOrigin:"50% 100%", repeat:3, yoyo:true, ease:"Bounce.easeIn"}, '+0.05')
+  .from('#palm3', 0.15, {rotation: -3, transformOrigin:"50% 100%", repeat:3, yoyo:true, ease:"Bounce.easeIn"}, '+0.025')
+  .to('#palm-text', 0.75, {text:"Beware: Illustraion Jungle"}, 0);
   
   $("#stop10").hover(function(){
     palmHover.play();
