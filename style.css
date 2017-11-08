@@ -296,6 +296,17 @@ footer p {
     margin: 0.75em auto;
 }
 
+.footer-icon {
+    display: block;
+    margin: 1.5em auto;
+    width: 8%;
+    transition: transform 0.2s ease-in; 
+}
+
+svg.footer-icon:hover {
+    transform: scale(1.05);    
+}
+
 
 
 /* GENERAL SECTION STYLING */
@@ -352,12 +363,6 @@ p {
     width: 68%;
     line-height: 1.5em;
     margin: 1.5em auto;
-}
-
-.footer-icon {
-    display: block;
-    margin: 1.5em auto;
-    width: 8%;
 }
 
 
