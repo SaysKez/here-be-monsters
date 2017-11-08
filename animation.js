@@ -45,13 +45,13 @@ path.style.strokeDashoffset = '0';
 */
 
 
-//KET LOCATION REPEAT
+//KEY LOCATION REPEAT
 var shipRepeat = new TimelineMax({repeat:-1, yoyo:true, repeatDelay:0.05});
 shipRepeat.add('start', 0)
-.fromTo('#ship', 1, { rotation:-3, transformOrigin: "50% 50%"}, {rotation:3, transformOrigin: "50% 50%"}, 'start');
+.fromTo('.ship', 1, { rotation:-3, transformOrigin: "50% 50%"}, {rotation:3, transformOrigin: "50% 50%"}, 'start');
 
 var chestRepeat = new TimelineMax({repeat:-1, yoyo:true, repeatDelay:1});
-chestRepeat.to('#chest-inside', 1, {ease: "Back.easeOut", transformOrigin: "50% 50%", scaleY: 1.3}, 0);
+chestRepeat.to('.chest-inside', 1, {ease: "Back.easeOut", transformOrigin: "50% 50%", scaleY: 1.3}, 0);
 
 var flagRepeat = new TimelineMax({repeat:-1, yoyo:true});
 flagRepeat.add('start', 0)
@@ -68,7 +68,7 @@ krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9
 
   var shipHover = new TimelineMax({paused: true});
   shipHover.add('start', 0)
-  shipHover.to('#ship', 0.5, {transformOrigin: "50% 50%", ease: "Back.easeOut", scale:1.1}, 'start')
+  shipHover.to('.ship', 0.5, {transformOrigin: "50% 50%", ease: "Back.easeOut", scale:1.1}, 'start')
   .to('.ship-highlight', 0.5, {fill:"#6ad4eb", stroke:"#6ad4eb"}, 'start')
   .to('#about-text', 0.5, {text:"Come Sailing", fill: "#6ad4eb"}, 'start');
 
@@ -128,7 +128,7 @@ krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9
   })
 
 
-  //PROJECT HOVERS
+  //LINK HOVERS
   //Link symbols:  ⇒ ⇛ ⇢ ↦
   var project1Hover = new TimelineMax({paused:true});
   project1Hover.to('.project1-link', 0.75, {transformOrigin:"50% 50%", ease: "Back.easeOut", scale: 1.25, opacity:1}, 0)
@@ -161,10 +161,21 @@ krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9
   })
 
 
+  var logbookHover = new TimelineMax({paused:true});
+  logbookHover.to('.blog-link', 0.75, {transformOrigin:"50% 50%", ease: "Back.easeOut", scale: 1.25, opacity:1}, 0)
+  .to('#logbook-text', 0.5, {text:"Captain's Log ↦"}, 0);
+ 
+  $("#stop9").hover(function(){
+    logbookHover.play();
+    },function(){
+      logbookHover.reverse();
+  })
+
+
   //MINOR LOCATION HOVERS
   var swampHoverIn = new TimelineMax({paused:true});
-  swampHoverIn.to('#croc', 0.75, {ease: "Back.easeIn", y: 10, opacity: 0.8}, 0)
-  .to('#swamp-text', 0.75, {text:"Swamps of Javascript"}, 0);
+  swampHoverIn.to('#croc', 0.6, {ease: "Back.easeIn", y: 10, opacity: 0.8}, 0)
+  .to('#swamp-text', 0.75, {text:"Swamps of Code"}, 0);
   
   $("#stop2").hover(function(){
       swampHoverIn.play();
@@ -204,4 +215,28 @@ krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9
     caveHover.play();
     },function(){
     caveHover.reverse();
+  })
+
+  var bottleHover = new TimelineMax({paused:true});
+  bottleHover.to('#bottled-ship', 0.5, {rotation:-3, x:-4, scaleX:1.05, repeat:2, yoyo:true, transformOrigin: "50% 50%"}, 0)
+  .to('#bottle-text', 0.75, {text:"Side Projects Brewing"}, 0);
+  
+  $("#stop7").hover(function(){
+    bottleHover.play();
+    },function(){
+      bottleHover.reverse();
+  })
+
+  //logbook
+
+  var palmHover = new TimelineMax({paused:true});
+  palmHover.from('#palm1', 0.2, {rotation: -5, transformOrigin:"50% 100%", repeat:3, yoyo:true, ease:"Bounce.easeIn"}, 0)
+  .from('#palm2', 0.2, {rotation: 5, transformOrigin:"50% 100%", repeat:3, yoyo:true, ease:"Bounce.easeIn"}, '+0.05')
+  .from('#palm3', 0.15, {rotation: -3, transformOrigin:"50% 100%", repeat:3, yoyo:true, ease:"Bounce.easeIn"}, '+0.025')
+  .to('#palm-text', 0.75, {text:"Beware: Illustraion Jungle"}, 0);
+  
+  $("#stop10").hover(function(){
+    palmHover.play();
+    },function(){
+      palmHover.reverse();
   })

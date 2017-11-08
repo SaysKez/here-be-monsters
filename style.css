@@ -22,26 +22,32 @@ a {
     text-decoration: none;
 }
 
+p a {
+    color: #FFF;
+    text-decoration: underline;
+    text-decoration-color: #6ad4eb;
+}
+
 .responsive-map {
     display: none;
 }
 
 /* 2.1 TYPOGRAPHY */
 
-p {
-    font-size: 1.1em;
+p, li {
+    font-size: 1.25em;
     max-width: 850px;
 }
 
 h1, h2, h3, h4 {
     font-family: "futura-pt", Futura, sans-serif;    
-    font-weight: 800;    
+    font-weight: 700;    
 }
 
 h1 {
     font-size: 6.854em; 
-    font-family: Futura, sans-serif;
-    text-transform: uppercase;
+    font-family: "futura-pt", Futura, sans-serif;
+    font-weight: 800;        
     text-align: center;
     width: 68%;
     margin: 1em auto 0em auto;
@@ -278,8 +284,16 @@ nav li:hover .nav-trim {
 }
 
 .social img {
-    width: 3.25em;
+    width: 2.5em;
     margin: auto 0.5em auto 0.5em;
+}
+
+footer p {
+    font-size: 0.8em;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+    margin: 0.75em auto;
 }
 
 
@@ -497,7 +511,7 @@ p.project-type {
 
 .casestudy h3 {
     margin: 2em auto 0.5em auto;
-    width: 25%;
+    width: 28%;
     border-bottom: 0.1em solid #6ad4eb;
 }
 
@@ -534,15 +548,19 @@ p.project-type {
     /* font-style: italic; */
 }
 
+.footnote {
+    text-align: center;
+    font-weight: 700;
+}
 
 /* CONTACT */
-.contact a {
+.contact h3 a {
     color: #FFF;
     border-bottom: 0.1em solid #6ad4eb;
     transition: all 0.25s ease-in;
 }
 
-.contact a:hover {
+.contact h3 a:hover {
     /* transform-origin: 100% 50%; */   
     color: #6ad4eb;
 }
@@ -568,13 +586,26 @@ p.project-type {
 }
 
 .icon-flex {
-    width: 25%;
+    width: 20%;
     display: block;
-    margin: 2em;
+    margin: 1em 2em;
 }
 
 .narrow {
-    width: 12%;
+    width: 10%;
+}
+
+
+/* CV */
+.flex-project-item li {
+    color: #FFF;
+    margin: 1em auto;
+    line-height: 1.5em;
+}
+
+.title-flex {
+    width: 30%;
+    margin: auto 1em;
 }
 
 
@@ -584,7 +615,30 @@ p.project-type {
 
 /* HOME RESPONSIVE */
 
-@media (max-width: 42em) {
+@media (max-width: 45em) {
+
+    /* TYPOGRAPHY */
+    h1 {
+        font-size: 3.25em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 2.5em;
+    }
+
+    h4 {
+        font-size: 2em;
+    }
+
+    p {
+        width: 90%;
+    }
+
+
 
     /* GENERAL */
     .menu {
@@ -607,6 +661,7 @@ p.project-type {
         color: #FFF;
         width: 80%;
         text-align: center;
+        margin: 0.75em auto;
     }
 
     .responsive-map div {
@@ -614,8 +669,26 @@ p.project-type {
         padding: 1.5em 0em;  
     }
 
+    .responsive-map .button {
+        padding: 0.5em 0em;
+    }
+
     div.water {
         background-color: #6ad4eb;
+    }
+
+    div.water p {
+        color: #000;
+    }
+
+
+    div.water .button {
+        background-color: #6ad4eb;
+    }
+
+    div.water .button a {
+        background-color: #000;
+        color: #FFF;
     }
 
     /* INTRO */
@@ -627,10 +700,11 @@ p.project-type {
     }
 
     .key-location-icon {
-        width: 25%;
-        height: auto;
+        height: 8em;
+        width: auto;
         display: block;
-        margin: auto;
+        margin: 5em auto 1em auto;
+        transform-origin: 50% 50%;
     }
 
     .project-icon {
@@ -648,4 +722,76 @@ p.project-type {
         margin: auto;
     }
 
+
+
+    /* PORTFOLIO */
+
+    .parallax-bg {
+        margin-top: -3em;
+    }
+
+    .parallax-footer {
+        height: 12em;
+    }
+
+    .flex-container {
+        width: 100%;
+        flex-direction: column;
+        padding: 0.5em 0;
+        border: none;
+        border-top: 0.25em solid #6ad4eb;
+        border-bottom: 0.25em solid #6ad4eb;
+        border-radius: 0;
+        display: block;
+        margin: 1em auto;
+    }
+
+    .flex-item {
+        text-align: center;
+        align-content: center;
+        display: block;
+        margin: auto;
+    }
+
+    .flex-item h3 {
+        text-align: center;
+    }
+
+    .flex-item svg {
+        display: block;
+    }
+
+
+
+
+    /* CASESTUDY */
+    .flex-project-container {
+        flex-direction: column;
+    }
+
+    .flex-project-item {
+        width: 70%;
+        margin: 2em;
+    }
+
+    .flex-project-item p {
+        margin: 0.5em 0em;
+        width: 100%;
+        font-style: italic;
+    }
+
+    .project-header {
+        width: 90%;
+    }
+
+    .casestudy h3 {
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+
+    .long-title .border-top {
+        margin-top: 5em;
+    }
+    
 }
