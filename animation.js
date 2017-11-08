@@ -86,6 +86,7 @@ krakenRepeat.to('.tentacle-right', 1, {rotation:3, transformOrigin: "50% 100%", 
   .to('#chest', 0.5, {transformOrigin: "50% 50%", ease: "Back.easeOut", scale:1.1}, 'start')      
   .to('.chest-highlight', 0.5, {fill:"#6ad4eb", stroke:"#6ad4eb"}, 'start')
   .to('#chest-stoke', 0.5, {stroke: "#6ad4eb"}, 'start')
+  .to('.chest-inside', 0.5, {ease: "Back.easeOut", scaleY: 1.3, transformOrigin: "50% 50%"}, 0)
   .to('#work-text', 0.5, {text:"Peek Inside", fill: "#6ad4eb"}, 'start');
 
   $("#work-box").hover(function(){
