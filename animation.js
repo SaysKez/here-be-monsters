@@ -50,15 +50,18 @@ var shipRepeat = new TimelineMax({repeat:-1, yoyo:true, repeatDelay:0.05});
 shipRepeat.add('start', 0)
 .fromTo('.ship', 1, { rotation:-3, transformOrigin: "50% 50%"}, {rotation:3, transformOrigin: "50% 50%"}, 'start');
 
+/*
 var chestRepeat = new TimelineMax({repeat:-1, yoyo:true, repeatDelay:1});
-chestRepeat.to('.chest-inside', 1, {ease: "Back.easeOut", transformOrigin: "50% 50%", scaleY: 1.3}, 0);
+chestRepeat.to('.chest-inside', 1, {ease: "Back.easeOut", scaleY: 1.3, transformOrigin: "50% 50%"}, 0);
+*/
 
 var flagRepeat = new TimelineMax({repeat:-1, yoyo:true});
 flagRepeat.add('start', 0)
 .to('.flag-wave', 1, {scaleY:0.95, scaleX:1.05}, 'start');
 
 var krakenRepeat = new TimelineMax();
-krakenRepeat.to('.kraken-tentacles', 1, {transformOrigin: "50% 65%", scaleY: 0.9, scaleX: 0.98, repeat:-1, yoyo:true}, 0)
+krakenRepeat.to('.tentacle-right', 1, {rotation:3, transformOrigin: "50% 100%", repeat:-1, yoyo:true}, 0)
+.to('.tentacle-left', 1, {rotation:-3, transformOrigin: "50% 100%", repeat:-1, yoyo:true}, 0)
 .to('#kraken-head', 3, {transformOrigin: "50% 65%", scaleY: 0.8}, 0);
 
 

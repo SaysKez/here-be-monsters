@@ -691,8 +691,6 @@ p.project-type {
         color: #FFF;
     }
 
-    /* INTRO */
-
     #wordmark {
         display: block;
         margin: auto;
@@ -704,14 +702,14 @@ p.project-type {
         width: auto;
         display: block;
         margin: 5em auto 1em auto;
-        transform-origin: 50% 50%;
+        /* transform-origin: center bottom !important; */
     }
+
+    /* WORK */
 
     .project-icon {
         width: 20%;
     }
-
-    /* WORK */
 
     /* replace with flex from work page */
     .flex-row {
