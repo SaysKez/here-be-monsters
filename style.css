@@ -296,6 +296,17 @@ footer p {
     margin: 0.75em auto;
 }
 
+.footer-icon {
+    display: block;
+    margin: 1.5em auto;
+    width: 8%;
+    transition: transform 0.2s ease-in; 
+}
+
+svg.footer-icon:hover {
+    transform: scale(1.05);    
+}
+
 
 
 /* GENERAL SECTION STYLING */
@@ -352,12 +363,6 @@ p {
     width: 68%;
     line-height: 1.5em;
     margin: 1.5em auto;
-}
-
-.footer-icon {
-    display: block;
-    margin: 1.5em auto;
-    width: 8%;
 }
 
 
@@ -691,8 +696,6 @@ p.project-type {
         color: #FFF;
     }
 
-    /* INTRO */
-
     #wordmark {
         display: block;
         margin: auto;
@@ -704,24 +707,28 @@ p.project-type {
         width: auto;
         display: block;
         margin: 5em auto 1em auto;
-        transform-origin: 50% 50%;
-    }
-
-    .project-icon {
-        width: 20%;
+        /* transform-origin: center bottom !important; */
     }
 
     /* WORK */
-
-    /* replace with flex from work page */
-    .flex-row {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        width: 90%;
-        margin: auto;
+    .button-flex .flex-wrapper {
+        margin-bottom: -2.5em;
     }
 
+    .button-flex .flex-container {
+        border: 0.25em solid #6ad4eb;
+        border-radius: 2em;        
+        width: 90%;
+    }
+
+    .button-flex .flex-item {
+        width: 95%;
+        padding: 0.2em 0em;
+    }
+
+    .button-flex svg {
+        width: 8em;
+    }
 
 
     /* PORTFOLIO */
