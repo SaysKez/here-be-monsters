@@ -623,7 +623,7 @@ p.project-type {
 
     /* TYPOGRAPHY */
     h1 {
-        font-size: 5em;
+        font-size: 3.75em;
     }
 
     h2 {
@@ -738,7 +738,11 @@ p.project-type {
     /* PORTFOLIO */
 
     .parallax-bg {
-        margin-top: -6em;
+        margin-top: -5em;
+    }
+
+    .border-top {
+        margin-top: 2em;
     }
 
     .parallax-footer {
