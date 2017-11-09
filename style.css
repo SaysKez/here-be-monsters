@@ -347,7 +347,6 @@ svg.footer-icon:hover {
 }
 
 .header-icon {
-    width: 20%;
     height: auto;
     margin-bottom: -6em;
     z-index: 3;
@@ -624,7 +623,7 @@ p.project-type {
 
     /* TYPOGRAPHY */
     h1 {
-        font-size: 3.25em;
+        font-size: 5em;
     }
 
     h2 {
@@ -662,6 +661,11 @@ p.project-type {
         display: none;               
     }
 
+    .footer-icon {
+        width: 5em;
+    }
+
+    /* HOME */
     .responsive-map p {
         color: #FFF;
         width: 80%;
@@ -734,7 +738,7 @@ p.project-type {
     /* PORTFOLIO */
 
     .parallax-bg {
-        margin-top: -3em;
+        margin-top: -6em;
     }
 
     .parallax-footer {
