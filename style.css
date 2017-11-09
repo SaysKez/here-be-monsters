@@ -725,7 +725,15 @@ p.project-type {
         margin: auto;
     }
 
+    .button-flex .flex-container {
+        border: 0.25em solid #6ad4eb;
+        border-radius: 2em;        
+        width: 90%;
+    }
 
+    .button-flex .flex-item {
+        width: 100%;
+    }
 
     /* PORTFOLIO */
 
