@@ -68,6 +68,8 @@ h3 {
 h4 {
     font-size: 1.618em;
     text-align: center;
+    display: block;
+    margin: auto;
 }
 
 .key-location-text {
@@ -624,6 +626,7 @@ p.project-type {
     /* TYPOGRAPHY */
     h1 {
         font-size: 3.75em;
+        width: 100%;
     }
 
     h2 {
@@ -635,7 +638,8 @@ p.project-type {
     }
 
     h4 {
-        font-size: 2em;
+        font-size: 1.25em;
+        width: 90%;
     }
 
     p {
@@ -738,7 +742,7 @@ p.project-type {
     /* PORTFOLIO */
 
     .parallax-bg {
-        margin-top: -5em;
+        margin-top: -4em;
     }
 
     .border-top {
