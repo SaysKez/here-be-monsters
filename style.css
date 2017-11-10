@@ -560,13 +560,13 @@ p.project-type {
 }
 
 /* CONTACT */
-.contact h3 a {
+h3 a {
     color: #FFF;
     border-bottom: 0.1em solid #6ad4eb;
     transition: all 0.25s ease-in;
 }
 
-.contact h3 a:hover {
+h3 a:hover {
     /* transform-origin: 100% 50%; */   
     color: #6ad4eb;
 }
@@ -616,7 +616,9 @@ p.project-type {
     margin: 0.5em 0em;
 }
 
-
+.heading {
+    margin: 1.5em auto 0.5em auto;
+}
 
 
 
