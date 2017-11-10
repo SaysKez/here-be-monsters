@@ -22,8 +22,8 @@ a {
     text-decoration: none;
 }
 
-p a {
-    color: #FFF;
+p a, li a {
+    color: #6ad4eb;
     text-decoration: underline;
     text-decoration-color: #6ad4eb;
 }
@@ -609,9 +609,11 @@ p.project-type {
     line-height: 1.5em;
 }
 
-.title-flex {
-    width: 30%;
-    margin: auto 1em;
+.flex-project-item h4 {
+    color: #FFF;
+    font-weight: 400;
+    text-align: left;
+    margin: 0.5em 0em;
 }
 
 
@@ -813,4 +815,22 @@ p.project-type {
         margin-top: 5em;
     }
     
+
+
+    /* ABOUT */
+
+    .flex-wide {
+        margin: 0em auto;
+        width: 80%;        
+    }
+    
+    .flex-project-item h4 {
+        text-align: center;
+        margin: 0.5em auto;        
+    }
+    
+    .flex-project-item h3 {
+        text-align: center;
+        margin: 1em auto 0em auto;
+    }
 }
