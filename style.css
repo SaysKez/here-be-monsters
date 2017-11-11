@@ -560,6 +560,10 @@ p.project-type {
     font-weight: 700;
 }
 
+
+
+
+
 /* CONTACT */
 h3 a {
     color: #FFF;
@@ -575,6 +579,9 @@ h3 a:hover {
 .contact p {
     text-align: center;
 }
+
+
+
 
 
 /* ABOUT */
@@ -835,5 +842,11 @@ h3 a:hover {
     .flex-project-item h3 {
         text-align: center;
         margin: 1em auto 0em auto;
+    }
+
+    .icon-flex {
+        order: -1; 
+        transform: scale(1.5); 
+        margin: 4em auto 1em auto;      
     }
 }
