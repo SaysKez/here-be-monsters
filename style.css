@@ -678,7 +678,7 @@ h3 a:hover {
     }
 
     .footer-icon {
-        width: 5em;
+        width: 4em;
     }
 
     /* HOME */
@@ -801,14 +801,14 @@ h3 a:hover {
     }
 
     .flex-project-item {
-        width: 70%;
+        width: 80%;
         margin: 2em;
     }
 
     .flex-project-item p {
         margin: 0.5em 0em;
         width: 100%;
-        font-style: italic;
+        /* font-style: italic; */
     }
 
     .project-header {
@@ -818,7 +818,7 @@ h3 a:hover {
     .casestudy h3 {
         display: block;
         margin: auto;
-        width: 50%;
+        width: 60%;
     }
 
     .long-title .border-top {
