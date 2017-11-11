@@ -611,6 +611,14 @@ h3 a:hover {
 
 
 /* CV */
+.cv h2 {
+    margin: 1.5em auto 0.5em auto;
+}
+
+.cv h3 {
+    margin: 1.5em auto 0.5em auto;
+}
+
 .flex-project-item li {
     color: #FFF;
     margin: 1em auto;
@@ -622,10 +630,6 @@ h3 a:hover {
     font-weight: 400;
     text-align: left;
     margin: 0.5em 0em;
-}
-
-.heading {
-    margin: 1.5em auto 0.5em auto;
 }
 
 
@@ -850,4 +854,10 @@ h3 a:hover {
         transform: scale(1.5); 
         margin: 4em auto 1em auto;      
     }
+
+    /* CV */
+    .cv h2 {
+        margin: 1.5em auto -1em auto;
+    }
+
 }
