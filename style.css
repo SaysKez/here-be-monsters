@@ -22,8 +22,8 @@ a {
     text-decoration: none;
 }
 
-p a {
-    color: #FFF;
+p a, li a {
+    color: #6ad4eb;
     text-decoration: underline;
     text-decoration-color: #6ad4eb;
 }
@@ -68,6 +68,8 @@ h3 {
 h4 {
     font-size: 1.618em;
     text-align: center;
+    display: block;
+    margin: auto;
 }
 
 .key-location-text {
@@ -225,7 +227,8 @@ nav li:hover .nav-trim {
       color: #000;
       font-weight: 700;
       line-height: 2em;
-  }
+      text-decoration: none;
+    }
   nav ul li {
     padding: 0em 1.1em;
     font-size: 1.618rem;
@@ -296,6 +299,17 @@ footer p {
     margin: 0.75em auto;
 }
 
+.footer-icon {
+    display: block;
+    margin: 1.5em auto;
+    width: 8%;
+    transition: transform 0.2s ease-in; 
+}
+
+svg.footer-icon:hover {
+    transform: scale(1.05);    
+}
+
 
 
 /* GENERAL SECTION STYLING */
@@ -336,7 +350,6 @@ footer p {
 }
 
 .header-icon {
-    width: 20%;
     height: auto;
     margin-bottom: -6em;
     z-index: 3;
@@ -352,12 +365,6 @@ p {
     width: 68%;
     line-height: 1.5em;
     margin: 1.5em auto;
-}
-
-.footer-icon {
-    display: block;
-    margin: 1.5em auto;
-    width: 8%;
 }
 
 
@@ -553,14 +560,18 @@ p.project-type {
     font-weight: 700;
 }
 
+
+
+
+
 /* CONTACT */
-.contact h3 a {
+h3 a {
     color: #FFF;
     border-bottom: 0.1em solid #6ad4eb;
     transition: all 0.25s ease-in;
 }
 
-.contact h3 a:hover {
+h3 a:hover {
     /* transform-origin: 100% 50%; */   
     color: #6ad4eb;
 }
@@ -568,6 +579,9 @@ p.project-type {
 .contact p {
     text-align: center;
 }
+
+
+
 
 
 /* ABOUT */
@@ -603,12 +617,16 @@ p.project-type {
     line-height: 1.5em;
 }
 
-.title-flex {
-    width: 30%;
-    margin: auto 1em;
+.flex-project-item h4 {
+    color: #FFF;
+    font-weight: 400;
+    text-align: left;
+    margin: 0.5em 0em;
 }
 
-
+.heading {
+    margin: 1.5em auto 0.5em auto;
+}
 
 
 
@@ -619,7 +637,8 @@ p.project-type {
 
     /* TYPOGRAPHY */
     h1 {
-        font-size: 3.25em;
+        font-size: 3.75em;
+        width: 100%;
     }
 
     h2 {
@@ -631,7 +650,8 @@ p.project-type {
     }
 
     h4 {
-        font-size: 2em;
+        font-size: 1.25em;
+        width: 90%;
     }
 
     p {
@@ -657,6 +677,11 @@ p.project-type {
         display: none;               
     }
 
+    .footer-icon {
+        width: 5em;
+    }
+
+    /* HOME */
     .responsive-map p {
         color: #FFF;
         width: 80%;
@@ -691,8 +716,6 @@ p.project-type {
         color: #FFF;
     }
 
-    /* INTRO */
-
     #wordmark {
         display: block;
         margin: auto;
@@ -704,30 +727,38 @@ p.project-type {
         width: auto;
         display: block;
         margin: 5em auto 1em auto;
-        transform-origin: 50% 50%;
-    }
-
-    .project-icon {
-        width: 20%;
+        /* transform-origin: center bottom !important; */
     }
 
     /* WORK */
-
-    /* replace with flex from work page */
-    .flex-row {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        width: 90%;
-        margin: auto;
+    .button-flex .flex-wrapper {
+        margin-bottom: -2.5em;
     }
 
+    .button-flex .flex-container {
+        border: 0.25em solid #6ad4eb;
+        border-radius: 2em;        
+        width: 90%;
+    }
+
+    .button-flex .flex-item {
+        width: 95%;
+        padding: 0.2em 0em;
+    }
+
+    .button-flex svg {
+        width: 8em;
+    }
 
 
     /* PORTFOLIO */
 
     .parallax-bg {
-        margin-top: -3em;
+        margin-top: -4em;
+    }
+
+    .border-top {
+        margin-top: 2em;
     }
 
     .parallax-footer {
@@ -794,4 +825,28 @@ p.project-type {
         margin-top: 5em;
     }
     
+
+
+    /* ABOUT */
+
+    .flex-wide {
+        margin: 0em auto;
+        width: 80%;        
+    }
+    
+    .flex-project-item h4 {
+        text-align: center;
+        margin: 0.5em auto;        
+    }
+    
+    .flex-project-item h3 {
+        text-align: center;
+        margin: 1em auto 0em auto;
+    }
+
+    .icon-flex {
+        order: -1; 
+        transform: scale(1.5); 
+        margin: 4em auto 1em auto;      
+    }
 }
