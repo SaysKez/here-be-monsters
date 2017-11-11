@@ -782,6 +782,7 @@ h3 a:hover {
         align-content: center;
         display: block;
         margin: auto;
+        width: 80%;
     }
 
     .flex-item h3 {
