@@ -227,7 +227,8 @@ nav li:hover .nav-trim {
       color: #000;
       font-weight: 700;
       line-height: 2em;
-  }
+      text-decoration: none;
+    }
   nav ul li {
     padding: 0em 1.1em;
     font-size: 1.618rem;
