@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Here Be Monsters | Kezie Todd</title>
+    <title>Kezie Todd | Here Be Monsters</title>
     
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -366,10 +366,17 @@
               <tspan x="1050" y="700" id="logbook-text"></tspan>
             </text>
 
+            <!-- g around palm to fix animation in Safari + Firefox -->
             <rect id="stop10" fill="#000" x="822" y="802" width="120" height="120"></rect>
-            <use id="palm1" class="minor-location" x="842" y="810" width="50" height="60" xlink:href="#palm-icon" />
-            <use id="palm2" class="minor-location" x="900" y="830" width="50" height="60" xlink:href="#palm-icon" />
-            <use id="palm3" class="minor-location" x="860" y="870" width="50" height="60" xlink:href="#palm-icon" />
+            <g id="palm1">
+              <use class="minor-location" x="842" y="810" width="50" height="60" xlink:href="#palm-icon" />
+            </g>
+            <g id="palm2">
+              <use class="minor-location" x="900" y="830" width="50" height="60" xlink:href="#palm-icon" />
+            </g>
+            <g id="palm3">
+              <use id="palm3" class="minor-location" x="860" y="870" width="50" height="60" xlink:href="#palm-icon" />
+            </g>
             <text class="location-description">
                 <tspan x="685" y="920" id="palm-text"></tspan>                
             </text>

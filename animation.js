@@ -237,7 +237,7 @@ krakenRepeat.to('.tentacle-right', 1, {rotation:3, transformOrigin: "50% 100%", 
   palmHover.from('#palm1', 0.2, {rotation: -5, transformOrigin:"50% 100%", repeat:3, yoyo:true, ease:"Bounce.easeIn"}, 0)
   .from('#palm2', 0.2, {rotation: 5, transformOrigin:"50% 100%", repeat:3, yoyo:true, ease:"Bounce.easeIn"}, '+0.05')
   .from('#palm3', 0.15, {rotation: -3, transformOrigin:"50% 100%", repeat:3, yoyo:true, ease:"Bounce.easeIn"}, '+0.025')
-  .to('#palm-text', 0.75, {text:"Beware: Illustraion Jungle"}, 0);
+  .to('#palm-text', 0.75, {text:"Beware: Illustration Jungle"}, 0);
   
   $("#stop10").hover(function(){
     palmHover.play();
