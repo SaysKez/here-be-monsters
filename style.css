@@ -615,9 +615,11 @@ h3 a:hover {
     margin: 1.5em auto 0.5em auto;
 }
 
+
 .cv h3 {
-    margin: 1.5em auto 0.5em auto;
+    margin-top: 1.5em;
 }
+
 
 .flex-project-item li {
     color: #FFF;
