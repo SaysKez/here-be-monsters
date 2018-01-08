@@ -1,3 +1,6 @@
-# Here Be Monsters
+# Jekyll Monster
 
-[Portfolio redesign WIP](https://sayskez.github.io/here-be-monsters/)
+### Still to Be Done:
+-	Blog
+- 	Convert case studies to collections so they can be written in markdown
+-  Further breakdown SVGs into includes
